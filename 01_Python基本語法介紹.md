@@ -41,8 +41,8 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 ## 變數
 - 變數是用來儲存資料的自訂名稱。
 - 新增變數：Python 的變數不需要宣告就可以使用了，語法為：`變數名稱 = 變數值`
-- 如果多個變數具有相同數值，可以一起指定變數值，例如：`a = b = c = 30`
-- 可以在同一列指定多個變數，變數之間以「，」分隔，值之間也以「，」分隔，例如：`name, age= "小明", 20`
+- 如果多個變數具有相同數值，可以一起指定變數值，例如：`a=b=c=30`
+- 可以在同一列指定多個變數，變數之間以「，」分隔，值之間也以「，」分隔，例如：`name,age="小明",20`
 - 刪除變數：如果變數不再使用，可以刪除，語法為：`del 變數名稱`
 
 ---
@@ -51,7 +51,19 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 - 變數的名稱只能以英文字母（A-Z, a-z）、數字（0-9）以及底線（_）所組成。
 - 變數名稱不得以數字開頭。
 - 英文字母大小寫視為不同變數名稱。
-- 變數名稱不能與 Python 內建的保留字相同，Python 的保留字有：`False、None、True、and、as、assert、async、await、break、class、continue、def、del、elif、else、except、finally、for、from、global、if、import、in、is、lambda、nonlocal、not、or、pass、raise、return、try、while、with、yield`
+- 變數名稱不能與 Python 內建的保留字相同。
+
+----
+
+Python 的保留字有：
+```Python
+False、None、True、and、as、assert
+async、await、break、class、continue
+def、del、elif、else、except、finally
+for、from、global、if、import、in、is
+lambda、nonlocal、not、or、pass、raise
+return、try、while、with、yield
+```
 
 ---
 
@@ -103,6 +115,19 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 - sep：分隔字元，如果列印多個變數，變數之間以分隔符號區隔，預設值為一個空白字元 (" ")。
 - end：結束字元，列印完畢後自動加入的字元，預設值為換列字元("\n")，所以下一次執行 print 命令會列印在下一列。
 
+----
+
+```Python
+a=1
+b=2
+print(a,b)
+print(a,b,sep=",")
+print(a)
+print(b)
+print(a,end="")
+print(b)
+```
+
 ---
 
 ## 「%」參數格式化
@@ -116,6 +141,14 @@ Python可在程式碼中加入「#」做為單行註解，例如：
     |%s|以字串資料型態輸出|
     |%e或%E|以科學記號方式輸出|
 
+----
+
+``` Python
+a=1
+b=2
+print("%d + %d = %d"%(a,b,a+b))
+```
+
 ---
 
 ## 「%」參數格式化
@@ -123,6 +156,15 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 - %5d：固定列印5個字元，若少於5位數，會在數字填入空白字元。
 - %5s：固定列印5個字元，若字串少於5個字元，會在字串左方填入空白字元。
 - %6.3f：固字列定6個字元（含小數點），小數固定列印2位數。若整數小於2位數，會在左方填入空白字元，若小數小於2位數，會在數字右方填入「0」字元。
+
+----
+
+```Python
+print("姓名   座號  國文  數學  英文")
+print("%3s  %2d   %3d   %3d   %3d" % ("林大明", 1, 100, 87, 79))
+print("%3s  %2d   %3d   %3d   %3d" % ("陳阿中", 2, 74, 88, 100))
+print("%3s  %2d   %3d   %3d   %3d" % ("張小英", 11, 82, 65, 8))
+```
 
 ---
 
@@ -139,11 +181,21 @@ print("{1} {0} {1}".format("hello", "world"))
 
 ## f-string 格式化字串
 我們可以在字串前加上字母 "f" 或 "F"，然後使用大括號 "{}" 包含變數或表達式。這些大括號內的內容將被替換為對應變數或表達式的值。
-[01_fstring.py](./01_fstring.py)
+
+```python
+a=1
+b=2
+total=f"The sum of {a} and {b} is {a+b}."
+print(total)
+
+name="Alice"
+age=25
+print(f"My name is {name} and I am {age} years old.")
+```
 
 ---
 
-# 練習題
+## 練習題
 #### 請使用格式化輸出或f-string的方法，將學生的姓名、數學成績、英語成績、以及總分統計輸出。變數名稱：name="Kerry"、math=70、eng=95，輸出格式如下。
 ```
 學生姓名：Kerry
@@ -151,9 +203,10 @@ print("{1} {0} {1}".format("hello", "world"))
 英語成績：95
 總分　　：165
 ```
+
 ---
 
-# input 輸入命令
+## input 輸入命令
 - 語法：變數 = input(提示字串)
 - 提示字串是輸出一段訊息，告知使用者如何輸入。
     ```
@@ -161,16 +214,17 @@ print("{1} {0} {1}".format("hello", "world"))
     math = int(input("請輸入數學成績: "))
     english = int(input("請輸入英文成績: "))
     ```
+
 ---
 
-# 運算式
+## 運算式
 - 指定資料做哪一種運算的是運算子
 - 進行運算的資料是運算元
 例如：3 + 5， + 是運算子，3、5 是運算元。
 
 ---
 
-# 算數運算子
+## 算數運算子
 |運算子|說明|範例|結果|
 |:-|:-|:-|:-|
 |+|加法|5+8|13|
@@ -186,7 +240,7 @@ print("{1} {0} {1}".format("hello", "world"))
 # 比較運算子
 |運算子|說明|範例|結果|
 |:-|:-|:-|:-|
-|==|運算式1是否等於運算式2|6+9==2+13<br>8+9==2+13|True<br>False|
+|==|運算式1是否等於運算式2|6+9== 2+13<br>8+9==2+13|True<br>False|
 |!=|運算式1是否不等於運算式2|8+9!=2+13<br>6+9!=2+13|True<br>False|
 |>|運算式1是否大於運算式2|8+9>2+13<br>6+9==2+13|True<br>False|
 |<|運算式1是否小於運算式2|5+9<2+13<br>8+9<2+13|True<br>False|
