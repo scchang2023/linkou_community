@@ -1,6 +1,8 @@
 ---
-type: slide
+# type: slide
+lang: zh-tw
 ---
+
 ## 輕鬆學Python程式語言
 #### 林口社區大學 113年春季班
 #### 章士祺
@@ -53,7 +55,6 @@ type: slide
 ### 上課方式
 - google meet
 
-
 ---
 
 ### 班務
@@ -61,4 +62,3 @@ type: slide
 - 選班代
 
 ---
-
