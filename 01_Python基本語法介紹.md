@@ -1,7 +1,12 @@
 ---
 type: slide
+lang: zh-tw
 ---
-
+<style>
+table {
+    font-size: 28px;
+}
+</style>
 # 基本語法介紹
 #### 章士祺
 
@@ -55,14 +60,13 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 
 ----
 
-Python 的保留字有：
-```Python
-False、None、True、and、as、assert
-async、await、break、class、continue
-def、del、elif、else、except、finally
-for、from、global、if、import、in、is
-lambda、nonlocal、not、or、pass、raise
-return、try、while、with、yield
+- Python 的保留字有：
+```python
+False, None, True, and, as, assert, async,
+await, break, class, continue, def, del, elif, 
+else, except, finally, for, from, global, if,
+import, in, is, lambda, nonlocal, not, or,
+pass, raise, return, try, while, with, yield
 ```
 
 ---
@@ -76,11 +80,11 @@ return、try、while、with、yield
 
 ## 資料型態（字串）
 - Python 字串（str）是變數值以一對雙引號「"」或單引號 「'」包起來，例如：
-    ```
+    ```Python
     str1 = "這是字串"
     ```
 - 如果字串要包含引號（雙引號或單引號），可使用另一種引號包住字串，例如：
-    ```
+    ```Python
     str2 = "小明說 '您好' "
     str3 = '小花說 "早上好" '
     ```
@@ -90,7 +94,7 @@ return、try、while、with、yield
 ## type 命令
 - type 命令可以取得變數的資料型態，如果不確定變數的型態，可用 type 來查看，語法：`type(變數)`
 - 例如：
-    ```
+    ```Python
     print(type(23))             # <class 'int'>
     print(type(25.0))           # <class 'float'>
     print(type("Good moring!")) # <class 'str'>
@@ -100,7 +104,10 @@ return、try、while、with、yield
 ---
 
 ## 資料型態轉換
-- Python 具有簡單的資料型態自動轉換功能：如整數與浮點運算，系統會先將整數轉換為浮點數再運算，運算結果為浮點數，例如：`num=5+7.8`
+- Python 具有簡單的資料型態自動轉換功能：如整數與浮點運算，系統會先將整數轉換為浮點數再運算，運算結果為浮點數，例如：
+    ```Python
+    num=5+7.8
+    ```
 - Python 強制資料型態轉換：
     - int()：強制轉換為整數資料型態。
     - float()：強制轉換為浮點數資料型態。
@@ -171,7 +178,7 @@ print("%3s  %2d   %3d   %3d   %3d" % ("張小英", 11, 82, 65, 8))
 ## format 格式化輸出
 利用 format 方法，以一對大括號 {} 表示參數的位置
 
-```
+```Python
 print("{} {}".format("hello", "world"))  
 print("{0} {1}".format("hello", "world"))  
 print("{1} {0} {1}".format("hello", "world"))
@@ -196,7 +203,7 @@ print(f"My name is {name} and I am {age} years old.")
 ---
 
 ## 練習題
-#### 請使用格式化輸出或f-string的方法，將學生的姓名、數學成績、英語成績、以及總分統計輸出。變數名稱：name="Kerry"、math=70、eng=95，輸出格式如下。
+請使用格式化輸出或f-string的方法，將學生的姓名、數學成績、英語成績、以及總分統計輸出。變數名稱：name="Kerry"、math=70、eng=95，輸出格式如下。
 ```
 學生姓名：Kerry
 數學成績：70
@@ -209,7 +216,7 @@ print(f"My name is {name} and I am {age} years old.")
 ## input 輸入命令
 - 語法：變數 = input(提示字串)
 - 提示字串是輸出一段訊息，告知使用者如何輸入。
-    ```
+    ```Python
     chinese = int(input("請輸入國文成績: "))
     math = int(input("請輸入數學成績: "))
     english = int(input("請輸入英文成績: "))
@@ -237,10 +244,10 @@ print(f"My name is {name} and I am {age} years old.")
 
 ---
 
-# 比較運算子
+## 比較運算子
 |運算子|說明|範例|結果|
 |:-|:-|:-|:-|
-|==|運算式1是否等於運算式2|6+9== 2+13<br>8+9==2+13|True<br>False|
+|==|運算式1是否等於運算式2|6+9==2+13<br>8+9==2+13|True<br>False|
 |!=|運算式1是否不等於運算式2|8+9!=2+13<br>6+9!=2+13|True<br>False|
 |>|運算式1是否大於運算式2|8+9>2+13<br>6+9==2+13|True<br>False|
 |<|運算式1是否小於運算式2|5+9<2+13<br>8+9<2+13|True<br>False|
@@ -248,3 +255,82 @@ print(f"My name is {name} and I am {age} years old.")
 |<=|運算式1是否小於等於運算式2|3+9<=2+13<br>8+9<=2+13|True<br>False|
 
 ---
+
+## 邏輯運算子
+|運算子|說明|範例|結果|
+|:-:|:-|:-|:-|
+|not|傳回與原來比較結果相反的值，即比較結果是True，就傳回False, 比較結果是False，就傳回True。|not(3>5)<br>not(5>3)|True<br>False|
+|and|只有兩個運算元的比較結果都是True，才會傳回True，其餘情況傳回False。|(5>3)and(9>6)<br>(5>3)and(9<6)<br>(5<3)and(9>6)<br>(5<3)and(9<6)|True<br>False<br>False<br>False|
+|or|只有兩個運算元的比較結果都是False，才會傳回False，其餘情況傳回True。|(5>3)and(9>6)<br>(5>3)and(9<6)<br>(5<3)and(9>6)<br>(5<3)and(9<6)|True<br>True<br>True<br>False|
+
+---
+
+## 複合指定運算子
+以i=10為例
+|運算子|說明|範例|結果|
+|:-:|:-|:-|:-|
+|+=|相加後再指定給原變數|i+=5|15|
+|-=|相減後再指定給原變數|i+=5|15|
+|*=|相乘後再指定給原變數|i*=5|15|
+|/=|相除後再指定給原變數|i/=5|15|
+|%=|相除得到餘數後再指定給原變數|i/=5|15|
+|//=|相除得到商數後再指定給原變數|i//=5|2|
+|**=|相加後再指定給原變數|i**=3|1000|
+
+----
+
+```python
+deposit=int(input("請輸入本金存款金額："))
+times=1.02**6
+deposit*=times
+print(f"6 年後存款為：{deposit}")
+```
+
+---
+
+## 運算子「+」的功能
+- 運算子「+」用於數值運算時是計算兩個運算元的總和
+- 運算子「+」用於字串組合時是將兩個運算元的字元組合在一起
+
+---
+
+## 運算子的優先順序
+優先順序高（數字較小）者先執行運算，同一列中的運算子具有相同的優先順序，優先順序相同時是由左至右運算。
+
+|優先順序|運算子|優先順序|運算子|
+|:-:|:-|:-:|:-|
+|1|()小括號|6|not|
+|2|+(正數)、-(負數)|7|and|
+|3|*(乘)、/(除)、%(餘)、//(商)|8|or|
+|4|+(加法)、-(減)|9|=、+=、-=、*=、/=、//=、**=|
+|5|==、!=、>、<、>=、<=|
+
+---
+
+## 練習題
+- 利用鍵盤輸入兩個整數，透過第三個變數，將兩個整數值交換並輸出。
+- 挑戰：不透過第三個變數，完成兩數交換。
+
+---
+
+## Python 程式碼縮排格式
+Python 語言以冒號「:」及縮排來表示程式區塊，縮排為 1 個 Tab 鍵或數個空白鍵，例如：
+```python
+if(score>=60):        #程式區塊
+    grade = "及格"     #程式區塊
+sum += score
+```
+
+---
+
+### 單向判斷式（if⋯）
+- 「if⋯」為單向判斷式，是 if 指令中最簡單的型態，語法為：
+```
+if (條件式):
+    程式區塊
+```
+
+
+```mermaid
+graph TD;
+前一列程式-->二期解盲成功就EUA;
