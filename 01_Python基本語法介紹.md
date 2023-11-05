@@ -1,14 +1,14 @@
 ---
-type: slide
+# type: slide
 lang: zh-tw
 ---
-<style>
+<!-- <style>
 table {
     font-size: 28px;
 }
-</style>
+</style> -->
 # 基本語法介紹
-#### 章士祺
+##### 章士祺
 
 ---
 
@@ -20,6 +20,7 @@ table {
 ---
 
 ## 第一隻程式
+
 - 印出 Hello Python
 - 執行程式
 
@@ -61,12 +62,8 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 ----
 
 - Python 的保留字有：
-```python
-False, None, True, and, as, assert, async,
-await, break, class, continue, def, del, elif, 
-else, except, finally, for, from, global, if,
-import, in, is, lambda, nonlocal, not, or,
-pass, raise, return, try, while, with, yield
+```python!
+False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
 ```
 
 ---
@@ -80,11 +77,11 @@ pass, raise, return, try, while, with, yield
 
 ## 資料型態（字串）
 - Python 字串（str）是變數值以一對雙引號「"」或單引號 「'」包起來，例如：
-    ```Python
+    ```python
     str1 = "這是字串"
     ```
 - 如果字串要包含引號（雙引號或單引號），可使用另一種引號包住字串，例如：
-    ```Python
+    ```python
     str2 = "小明說 '您好' "
     str3 = '小花說 "早上好" '
     ```
@@ -94,7 +91,7 @@ pass, raise, return, try, while, with, yield
 ## type 命令
 - type 命令可以取得變數的資料型態，如果不確定變數的型態，可用 type 來查看，語法：`type(變數)`
 - 例如：
-    ```Python
+    ```python
     print(type(23))             # <class 'int'>
     print(type(25.0))           # <class 'float'>
     print(type("Good moring!")) # <class 'str'>
@@ -105,13 +102,13 @@ pass, raise, return, try, while, with, yield
 
 ## 資料型態轉換
 - Python 具有簡單的資料型態自動轉換功能：如整數與浮點運算，系統會先將整數轉換為浮點數再運算，運算結果為浮點數，例如：
-    ```Python
+    ```python
     num=5+7.8
     ```
 - Python 強制資料型態轉換：
-    - int()：強制轉換為整數資料型態。
-    - float()：強制轉換為浮點數資料型態。
-    - str()：強制轉換為字串資料型態。
+    - `int()`：強制轉換為整數資料型態。
+    - `float()`：強制轉換為浮點數資料型態。
+    - `str()`：強制轉換為字串資料型態。
 
 ---
 
@@ -124,7 +121,7 @@ pass, raise, return, try, while, with, yield
 
 ----
 
-```Python
+```python
 a=1
 b=2
 print(a,b)
@@ -150,7 +147,7 @@ print(b)
 
 ----
 
-``` Python
+```python
 a=1
 b=2
 print("%d + %d = %d"%(a,b,a+b))
@@ -166,7 +163,7 @@ print("%d + %d = %d"%(a,b,a+b))
 
 ----
 
-```Python
+```python
 print("姓名   座號  國文  數學  英文")
 print("%3s  %2d   %3d   %3d   %3d" % ("林大明", 1, 100, 87, 79))
 print("%3s  %2d   %3d   %3d   %3d" % ("陳阿中", 2, 74, 88, 100))
@@ -178,7 +175,7 @@ print("%3s  %2d   %3d   %3d   %3d" % ("張小英", 11, 82, 65, 8))
 ## format 格式化輸出
 利用 format 方法，以一對大括號 {} 表示參數的位置
 
-```Python
+```python
 print("{} {}".format("hello", "world"))  
 print("{0} {1}".format("hello", "world"))  
 print("{1} {0} {1}".format("hello", "world"))
@@ -216,11 +213,11 @@ print(f"My name is {name} and I am {age} years old.")
 ## input 輸入命令
 - 語法：變數 = input(提示字串)
 - 提示字串是輸出一段訊息，告知使用者如何輸入。
-    ```Python
-    chinese = int(input("請輸入國文成績: "))
-    math = int(input("請輸入數學成績: "))
-    english = int(input("請輸入英文成績: "))
-    ```
+```python
+chinese = int(input("請輸入國文成績: "))
+math = int(input("請輸入數學成績: "))
+english = int(input("請輸入英文成績: "))
+```
 
 ---
 
@@ -247,9 +244,9 @@ print(f"My name is {name} and I am {age} years old.")
 ## 比較運算子
 |運算子|說明|範例|結果|
 |:-|:-|:-|:-|
-|==|運算式1是否等於運算式2|6+9==2+13<br>8+9==2+13|True<br>False|
+|==|運算式1是否等於運算式2|6+9\==2+13<br>8+9\==2+13|True<br>False|
 |!=|運算式1是否不等於運算式2|8+9!=2+13<br>6+9!=2+13|True<br>False|
-|>|運算式1是否大於運算式2|8+9>2+13<br>6+9==2+13|True<br>False|
+|>|運算式1是否大於運算式2|8+9>2+13<br>6+9\==2+13|True<br>False|
 |<|運算式1是否小於運算式2|5+9<2+13<br>8+9<2+13|True<br>False|
 |>=|運算式1是否大於等於運算式2|6+9>=2+13<br>3+9>=2+13|True<br>False|
 |<=|運算式1是否小於等於運算式2|3+9<=2+13<br>8+9<=2+13|True<br>False|
@@ -266,7 +263,7 @@ print(f"My name is {name} and I am {age} years old.")
 ---
 
 ## 複合指定運算子
-以i=10為例
+以`i=10`為例
 |運算子|說明|範例|結果|
 |:-:|:-|:-|:-|
 |+=|相加後再指定給原變數|i+=5|15|
@@ -323,14 +320,266 @@ sum += score
 
 ---
 
-### 單向判斷式（if⋯）
+## 單向判斷式（if⋯）
 - 「if⋯」為單向判斷式，是 if 指令中最簡單的型態，語法為：
+    ```
+    if (條件式):
+        程式區塊
+    ```
+- 以下是單向判斷式流程控制的流程圖：
+
+    ```flow
+    op_pre=>operation: 前一列程式
+    cond=>condition: 條件式
+    op1=>operation: 程式區塊
+    op_next=>operation: 後一列程式
+
+    op_pre->cond
+    cond(yes)->op1
+    cond(no)->op_next
+    op1->op_next
+    ```
+
+```python
+pw=input("請輸入密碼：")
+if(pw=="1234"):
+    print("歡迎光臨！")
 ```
-if (條件式):
+
+---
+
+## 雙向判斷式（if⋯else）
+- 「if⋯else⋯」為雙向判斷式，語法為：
+    ```
+    if (條件式):
+        程式區塊一
+    else:
+        程式區塊二
+    ```
+- 以下是雙向判斷式流程控制的流程圖：
+
+    ```flow
+    op_pre=>operation: 前一列程式
+    cond=>condition: 條件式
+    op1=>operation: 程式區塊一
+    op2=>operation: 程式區塊二
+    op_next=>operation: 後一列程式
+
+    op_pre->cond
+    cond(yes)->op1
+    cond(no)->op2
+    op1->op_next
+    op2->op_next
+    ```
+```python
+pw = input("請輸入密碼：")
+if(pw=="1234"):
+    print("歡迎光臨！")
+else:
+    print("密碼錯誤！")
+```
+
+---
+
+## 多向判斷式（if⋯elif⋯else）
+- 「if⋯elif⋯else」的語法為：
+    ```
+    if (條件式一):
+        程式區塊一
+    elif (條件式二):
+        程式區塊二
+    elif (條件式三):
+        …         
+    else:
+        程式區塊else
+    ```
+- 多向判斷式流程控制的流程圖：
+
+    ```flow
+    op_pre=>operation: 前一列程式
+    cond1=>condition: 條件式一
+    cond2=>condition: 條件式二
+    op1=>operation: 程式區塊一
+    op2=>operation: 程式區塊二
+    op_else=>operation: 程式區塊else
+    op_next=>operation: 後一列程式
+
+    op_pre->cond1
+    cond1(yes)->op1
+    cond1(no)->cond2
+    cond2(yes)->op2
+    cond2(no)->op_else
+    op1->op_next
+    op2->op_next
+    op_else->op_next
+    ```
+```python
+score = int(input("請輸入成績："))
+if score >= 90:
+    print("優等")
+elif score >= 80:
+    print("甲等")
+elif score >= 70:
+    print("乙等")
+elif score >= 60:
+    print("丙等")
+else:
+    print("丁等")
+```
+
+---
+
+## range 函式
+- 用來處理重覆事件的命令稱為「迴圈」
+- 迴圈命令有2個：
+    - for迴圈：用於執行固定次數的迴圈
+    - while迴圈：沒有固定次數
+- 迴圈最常使用整數循序數列，例如「1,2,3,⋯⋯」，range 函式的功能就是建立整數循序數列。
+
+---
+
+## range 函式的語法
+- range 函式單一參數
+    - 語法為：數列變數=range(正數值)，例如：`list1=range(5)  #數列為0,1,2,3,4`
+- range 函式二個參數
+    - 語法為：數列變數=range(起始值,終止值)，例如：`list2=range(3,8)   #數列值為3,4,5,6,7`
+    - 起始值及終止值皆可為負整數，例如：`list3=range(-2,4)   #數列值為-2,-1,0,1,2,3`
+
+----
+
+- range 函式三個參數
+    - 語法為：數列變數=range(起始值,終止值,間隔值)，例如：
+    `list4=range(3,8,1) #數列值為3,4,5,6,7`
+    `list5=range(3,8,2) #數列值為3,5,7`
+    
+    - 間隔值也可為負整數，此時起始值必須大於終止值，例如：
+    `list6=range(8,3,-1) #數列值為8,7,6,5,4`
+
+---
+
+## for 迴圈
+- 語法：
+```
+for 變數 in 數列:
     程式區塊
 ```
+- 以實例解說：
+```python
+for n in range(3): #產生 0,1,2 的數列
+    print(n, end=",") # 執行結果為 0,1,2, 
+```
+- 流程圖如下：
 
+    ```flow
+    op_start=>operation: for迴圈開始
+    cond=>condition: 條件式
+    op1=>operation: 程式區塊
+    op_end=>operation: for迴圈結束
 
-```mermaid
-graph TD;
-前一列程式-->二期解盲成功就EUA;
+    op_start->cond
+    cond(yes)->op1
+    cond(no)->op_end
+    op1->cond
+    ```
+
+---
+
+## 巢狀 for 迴圈
+- 利用兩層 for 迴圈列印九九乘法表
+
+```python
+for i in range(1,10):
+    for j in range(1,10):
+        product = i * j
+        print(f"{i}*{j}={product:2} ",end="")
+        # print(f"{i}*{j}={product:<2} ",end="")
+    print()
+```
+
+---
+
+## break 命令
+- 例如：
+```python
+for i in range(1, 11):
+    if i==6:
+        break
+    print(i, end=",") # 1,2,3,4,5
+```
+- 最小公倍數
+```python
+a=int(input("請輸入 a 的值："))
+b=int(input("請輸入 b 的值："))
+maxno=a*b+1
+for i in range(1,maxno):
+    if(i%a==0 and i%b==0):
+        print(f"{a} 和 {b} 的最小公倍數 = {i}")
+        break
+```
+
+---
+
+## continue 命令
+- 例如：
+```python
+for i in range(1, 11):
+    if i==6:
+        continue
+    print(i, end=",") # 1,2,3,4,5,7,8,9,10,
+```
+- 範例：
+```python
+n=int(input("請輸入正整數："))
+for i in range(1,n+1):
+    if i%5 ==0:
+        continue
+    print(i,end=" ")
+```
+
+---
+
+## while 迴圈
+- 語法：
+```python
+while(條件式):
+    程式區塊
+```
+- 流程圖：
+    ```flow
+    op_start=>operation: while迴圈開始
+    cond=>condition: 條件式
+    op1=>operation: 程式區塊
+    op_end=>operation: while迴圈結束
+
+    op_start->cond
+    cond(yes)->op1
+    cond(no)->op_end
+    op1->cond
+    ```
+- 例如：
+```python
+total=n=0
+while n<10:
+    n += 1
+    total+=n
+print(total)
+```
+- 在使用while迴圈時，要注意設定條件判斷的中止條件，否則會陷入無窮迴圈。
+
+---
+
+## 練習題
+1. 輸入正整數N，判斷N是否為質數。
+2. 輸入正整數N，印出小於N的所有質數
+
+---
+
+## 挑戰題
+- 猜密碼。
+- 玩法：其中一人做莊，給定一個數字範圍，再從中選出一個自然數，此數字稱為「密碼」，不能讓其他參與遊戲者得知。而遊戲參與者輪流猜測數字。每猜一個數，莊家就要告知遊戲者該數字是大於或小於密碼，直至密碼被猜中。
+
+---
+
+# The End!
+
+---
