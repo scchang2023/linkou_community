@@ -1,21 +1,26 @@
 ---
 # type: slide
-lang: zh-tw
+# lang: zh-tw
 ---
 <!-- <style>
 table {
     font-size: 28px;
 }
 </style> -->
+
 # 基本語法介紹
-##### 章士祺
+
+章士祺
 
 ---
 
 ## 安裝 Python
-#### https://www.python.org/
+
+https://www.python.org/
+
 ## 安裝 Visual Studio Code
-#### https://code.visualstudio.com/
+
+https://code.visualstudio.com/
 
 ---
 
@@ -27,14 +32,16 @@ table {
 ---
 
 ## 註解
-- 單行註解
-Python可在程式碼中加入「#」做為單行註解，例如：
-    ```
+
+- 單行註解：Python可在程式碼中加入`#`做為單行註解，例如：
+
+    ```python
     # 這是單行註解
     ```
-- 多行註解
-在註解的區塊前後加入三個單引號 (''') 或三個雙引號 (""") 作為多行註解，例如：
-    ```
+
+- 多行註解：在註解的區塊前後加入三個單引號 `'''` 或三個雙引號 `"""` 作為多行註解，例如：
+
+    ```python
     '''
     第一行註解
     第二行註解
@@ -45,26 +52,23 @@ Python可在程式碼中加入「#」做為單行註解，例如：
 ---
 
 ## 變數
+
 - 變數是用來儲存資料的自訂名稱。
 - 新增變數：Python 的變數不需要宣告就可以使用了，語法為：`變數名稱 = 變數值`
 - 如果多個變數具有相同數值，可以一起指定變數值，例如：`a=b=c=30`
-- 可以在同一列指定多個變數，變數之間以「，」分隔，值之間也以「，」分隔，例如：`name,age="小明",20`
+- 可以在同一列指定多個變數，變數之間以「`，`」分隔，值之間也以「`，`」分隔，例如：`name,age="小明",20`
 - 刪除變數：如果變數不再使用，可以刪除，語法為：`del 變數名稱`
 
 ---
 
 ## 變數命名規則
-- 變數的名稱只能以英文字母（A-Z, a-z）、數字（0-9）以及底線（_）所組成。
+
+- 變數的名稱只能以英文字母（`A-Z, a-z`）、數字（`0-9`）以及底線（`_`）所組成。
 - 變數名稱不得以數字開頭。
 - 英文字母大小寫視為不同變數名稱。
 - 變數名稱不能與 Python 內建的保留字相同。
 
-----
-
-- Python 的保留字有：
-```python!
-False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
-```
+    False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
 
 ---
 
