@@ -122,7 +122,7 @@ https://code.visualstudio.com/
 
 ---
 
-## `print` 輸出命令 (1)
+## `print` 輸出命令
 
 - print 命令能列印指定變數的內容，語法為：
 `print(變數1,變數2,...,sep=分隔字元,end=結束字元)`
@@ -131,8 +131,6 @@ https://code.visualstudio.com/
 - `end`：結束字元，列印完畢後自動加入的字元，預設值為換列字元("`\n`")，所以下一次執行 print 命令會列印在下一列。
 
 ---
-
-## `print` 輸出命令 (2)
 
 ```python
 a=1
@@ -177,8 +175,6 @@ print("%d + %d = %d"%(a,b,a+b))
 - `%6.3f`：固字列定6個字元（含小數點），小數固定列印2位數。若整數小於2位數，會在左方填入空白字元，若小數小於2位數，會在數字右方填入「0」字元。
 
 ---
-
-## 「`%`」參數格式化 (3)
 
 ```python
 print("姓名   座號  國文  數學  英文")
@@ -288,7 +284,7 @@ english = int(input("請輸入英文成績: "))
 
 ---
 
-## 複合指定運算子 (1)
+## 複合指定運算子
 
 以`i=10`為例
 |運算子|說明|範例|結果|
@@ -302,8 +298,6 @@ english = int(input("請輸入英文成績: "))
 |`**=`|相加後再指定給原變數|`i**=3`|`1000`|
 
 ---
-
-## 複合指定運算子 (2)
 
 ```python
 deposit=int(input("請輸入本金存款金額："))
@@ -354,7 +348,7 @@ sum += score
 
 ---
 
-## 單向判斷式（`if⋯`） (1)
+## 單向判斷式（`if⋯`）
 
 - 「if⋯」為單向判斷式，是 if 指令中最簡單的型態，語法為：
 
@@ -362,8 +356,6 @@ sum += score
     if (條件式):
         程式區塊
     ```
-
-## 單向判斷式（`if⋯`） (2)
 
 - 單向判斷式流程圖：
 
@@ -379,7 +371,7 @@ sum += score
     op1->op_next
     ```
 
-## 單向判斷式（`if⋯`） (3)
+---
 
 ```python
 pw=input("請輸入密碼：")
@@ -392,13 +384,15 @@ if(pw=="1234"):
 ## 雙向判斷式（if⋯else）
 
 - 「if⋯else⋯」為雙向判斷式，語法為：
-    ```
+
+    ```python
     if (條件式):
         程式區塊一
     else:
         程式區塊二
     ```
-- 以下是雙向判斷式流程控制的流程圖：
+
+- 雙向判斷式流程圖：
 
     ```flow
     op_pre=>operation: 前一列程式
@@ -413,6 +407,9 @@ if(pw=="1234"):
     op1->op_next
     op2->op_next
     ```
+
+---
+
 ```python
 pw = input("請輸入密碼：")
 if(pw=="1234"):
@@ -424,8 +421,10 @@ else:
 ---
 
 ## 多向判斷式（if⋯elif⋯else）
+
 - 「if⋯elif⋯else」的語法為：
-    ```
+
+    ```python
     if (條件式一):
         程式區塊一
     elif (條件式二):
@@ -435,7 +434,8 @@ else:
     else:
         程式區塊else
     ```
-- 多向判斷式流程控制的流程圖：
+
+- 多向判斷式流程圖：
 
     ```flow
     op_pre=>operation: 前一列程式
@@ -455,6 +455,7 @@ else:
     op2->op_next
     op_else->op_next
     ```
+
 ```python
 score = int(input("請輸入成績："))
 if score >= 90:
@@ -471,45 +472,48 @@ else:
 
 ---
 
-## range 函式
+## `range` 函式
+
 - 用來處理重覆事件的命令稱為「迴圈」
 - 迴圈命令有2個：
-    - for迴圈：用於執行固定次數的迴圈
-    - while迴圈：沒有固定次數
+  - for迴圈：用於執行固定次數的迴圈
+  - while迴圈：沒有固定次數
 - 迴圈最常使用整數循序數列，例如「1,2,3,⋯⋯」，range 函式的功能就是建立整數循序數列。
 
 ---
 
-## range 函式的語法
+## `range` 函式的語法
+
 - range 函式單一參數
-    - 語法為：數列變數=range(正數值)，例如：`list1=range(5)  #數列為0,1,2,3,4`
+  - 語法為：`數列變數=range(正數值)`，例如：`list1=range(5)  #數列為0,1,2,3,4`
 - range 函式二個參數
-    - 語法為：數列變數=range(起始值,終止值)，例如：`list2=range(3,8)   #數列值為3,4,5,6,7`
-    - 起始值及終止值皆可為負整數，例如：`list3=range(-2,4)   #數列值為-2,-1,0,1,2,3`
-
-----
-
+  - 語法為：`數列變數=range(起始值,終止值)`，例如：`list2=range(3,8)   #數列值為3,4,5,6,7`
+  - 起始值及終止值皆可為負整數，例如：`list3=range(-2,4)   #數列值為-2,-1,0,1,2,3`
 - range 函式三個參數
-    - 語法為：數列變數=range(起始值,終止值,間隔值)，例如：
+  - 語法為：數列變數=range(起始值,終止值,間隔值)，例如：
     `list4=range(3,8,1) #數列值為3,4,5,6,7`
-    `list5=range(3,8,2) #數列值為3,5,7`
-    
-    - 間隔值也可為負整數，此時起始值必須大於終止值，例如：
+    `list5=range(3,8,2) #數列值為3,5,7`  
+  - 間隔值也可為負整數，此時起始值必須大於終止值，例如：
     `list6=range(8,3,-1) #數列值為8,7,6,5,4`
 
 ---
 
-## for 迴圈
+## `for` 迴圈
+
 - 語法：
-```
-for 變數 in 數列:
-    程式區塊
-```
+
+    ```python
+    for 變數 in 數列:
+        程式區塊
+    ```
+
 - 以實例解說：
-```python
-for n in range(3): #產生 0,1,2 的數列
-    print(n, end=",") # 執行結果為 0,1,2, 
-```
+
+    ```python
+    for n in range(3): #產生 0,1,2 的數列
+        print(n, end=",") # 執行結果為 0,1,2, 
+    ```
+
 - 流程圖如下：
 
     ```flow
@@ -526,8 +530,9 @@ for n in range(3): #產生 0,1,2 的數列
 
 ---
 
-## 巢狀 for 迴圈
-- 利用兩層 for 迴圈列印九九乘法表
+## 巢狀 `for` 迴圈
+
+利用兩層 for 迴圈列印九九乘法表
 
 ```python
 for i in range(1,10):
@@ -540,53 +545,65 @@ for i in range(1,10):
 
 ---
 
-## break 命令
+## `break` 命令
+
 - 例如：
-```python
-for i in range(1, 11):
-    if i==6:
-        break
-    print(i, end=",") # 1,2,3,4,5
-```
-- 最小公倍數
-```python
-a=int(input("請輸入 a 的值："))
-b=int(input("請輸入 b 的值："))
-maxno=a*b+1
-for i in range(1,maxno):
-    if(i%a==0 and i%b==0):
-        print(f"{a} 和 {b} 的最小公倍數 = {i}")
-        break
-```
+
+    ```python
+    for i in range(1, 11):
+        if i==6:
+            break
+        print(i, end=",") # 1,2,3,4,5
+    ```
+
+- 取得最小公倍數
+
+    ```python
+    a=int(input("請輸入 a 的值："))
+    b=int(input("請輸入 b 的值："))
+    maxno=a*b+1
+    for i in range(1,maxno):
+        if(i%a==0 and i%b==0):
+            print(f"{a} 和 {b} 的最小公倍數 = {i}")
+            break
+    ```
 
 ---
 
-## continue 命令
+## `continue` 命令
+
 - 例如：
-```python
-for i in range(1, 11):
-    if i==6:
-        continue
-    print(i, end=",") # 1,2,3,4,5,7,8,9,10,
-```
+
+    ```python
+    for i in range(1, 11):
+        if i==6:
+            continue
+        print(i, end=",") # 1,2,3,4,5,7,8,9,10,
+    ```
+
 - 範例：
-```python
-n=int(input("請輸入正整數："))
-for i in range(1,n+1):
-    if i%5 ==0:
-        continue
-    print(i,end=" ")
-```
+
+    ```python
+    n=int(input("請輸入正整數："))
+    for i in range(1,n+1):
+        if i%5 ==0:
+            continue
+        print(i,end=" ")
+    ```
 
 ---
 
 ## while 迴圈
+
 - 語法：
-```python
-while(條件式):
-    程式區塊
-```
+
+    ```python
+    while(條件式):
+        程式區塊
+    ```
+
 - 流程圖：
+
     ```flow
     op_start=>operation: while迴圈開始
     cond=>condition: 條件式
@@ -598,30 +615,35 @@ while(條件式):
     cond(no)->op_end
     op1->cond
     ```
+
 - 例如：
-```python
-total=n=0
-while n<10:
-    n += 1
-    total+=n
-print(total)
-```
+
+    ```python
+    total=n=0
+    while n<10:
+        n += 1
+        total+=n
+    print(total)
+    ```
+
 - 在使用while迴圈時，要注意設定條件判斷的中止條件，否則會陷入無窮迴圈。
 
 ---
 
 ## 練習題
+
 1. 輸入正整數N，判斷N是否為質數。
 2. 輸入正整數N，印出小於N的所有質數
 
 ---
 
 ## 挑戰題
+
 - 猜密碼。
 - 玩法：其中一人做莊，給定一個數字範圍，再從中選出一個自然數，此數字稱為「密碼」，不能讓其他參與遊戲者得知。而遊戲參與者輪流猜測數字。每猜一個數，莊家就要告知遊戲者該數字是大於或小於密碼，直至密碼被猜中。
 
 ---
 
-# The End!
+# The End
 
 ---
