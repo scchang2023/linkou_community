@@ -1,5 +1,5 @@
 ---
-# type: slide
+# marp: true
 ---
 
 <!-- <style>

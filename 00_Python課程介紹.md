@@ -1,5 +1,5 @@
 ---
-# type: slide
+# marp: true
 ---
 
 # 輕鬆學Python程式
