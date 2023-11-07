@@ -1,5 +1,5 @@
 ---
-# marp: true
+marp: true
 # theme: gaia
 class: invert
 ---
