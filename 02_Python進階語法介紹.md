@@ -22,5 +22,5 @@ graph TD
     B[score 1]
     C[score 2]
     D[...]
-    E[score 4999]
+    E[score 499]
 ```
