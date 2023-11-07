@@ -1,5 +1,7 @@
 ---
-# marp: true
+marp: true
+# theme: gaia
+class: invert
 ---
 
 # 輕鬆學Python程式

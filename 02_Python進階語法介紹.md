@@ -1,12 +1,8 @@
 ---
-# marp: true
+marp: true
+# theme: gaia
+class: invert
 ---
-
-<!-- <style>
-table {
-    font-size: 28px;
-}
-</style> -->
 
 # Python進階語法介紹
 
