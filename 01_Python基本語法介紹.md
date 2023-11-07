@@ -1,6 +1,5 @@
 ---
 # type: slide
-# lang: zh-tw
 ---
 
 <!-- <style>
