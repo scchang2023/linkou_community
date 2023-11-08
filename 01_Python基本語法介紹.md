@@ -1,7 +1,7 @@
 ---
 marp: true
-# theme: gaia
-class: invert
+theme: gaia
+# class: invert
 ---
 
 # 基本語法介紹
