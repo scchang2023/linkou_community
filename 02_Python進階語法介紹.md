@@ -1,5 +1,5 @@
 ---
-marp: true
+# marp: true
 # theme: gaia
 # class: invert
 ---
@@ -38,9 +38,5 @@ marp: true
   - 例如：`list4=[]`
 - 多維串列宣告
   - 例如以下是二維串列範例：
-```python
-list5
-```
-
 
 ---

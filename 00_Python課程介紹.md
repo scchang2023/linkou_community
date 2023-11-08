@@ -1,6 +1,6 @@
 ---
-marp: true
-theme: gaia
+# marp: true
+# theme: gaia
 # class: invert
 ---
 
@@ -90,6 +90,8 @@ theme: gaia
 
 - 姓名
 - 是否有學過程式，對課程的期許。
+
+---
 
 ## 班務
 

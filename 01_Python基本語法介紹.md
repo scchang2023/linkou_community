@@ -1,6 +1,6 @@
 ---
-marp: true
-theme: gaia
+# marp: true
+# theme: gaia
 # class: invert
 ---
 
