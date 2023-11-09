@@ -1,7 +1,5 @@
 ---
-# marp: true
-# theme: gaia
-# class: invert
+
 ---
 
 # Python</br>基本語法介紹
@@ -131,24 +129,13 @@ Python 強制資料型態轉換：
 - `sep`：分隔字元，如果列印多個變數，變數之間以分隔符號區隔，預設值為一個空白字元 (" ")。
 - `end`：結束字元，列印完畢後自動加入的字元，預設值為換列字元("`\n`")，所以下一次執行 print 命令會列印在下一列。
 
----
-
-```python
-a=1
-b=2
-print(a,b)
-print(a,b,sep=",")
-print(a)
-print(b)
-print(a,end="")
-print(b)
-```
+[02_print.py](/sample_codes/part1/02_print.py)
 
 ---
 
 ## 「`%`」參數格式化
 
-- print 命令支援參數格式化功能，語法為：`print(變數 % 參數列)`
+- print 命令支援參數格式化功能，語法為：`print(格式化字串 % 變數)`
 - 常用的參數有：
     |參數|意義|
     |:-:|:-|
@@ -158,13 +145,7 @@ print(b)
     |`%s`|以字串資料型態輸出|
     |`%e`或`%E`|以科學記號方式輸出|
 
----
-
-```python
-a=1
-b=2
-print("%d + %d = %d"%(a,b,a+b))
-```
+[03_printf.py](/sample_codes/part1/03_printf.py)
 
 ---
 
@@ -173,14 +154,7 @@ print("%d + %d = %d"%(a,b,a+b))
 - `%5s`：固定列印5個字元，若字串少於5個字元，會在字串左方填入空白字元。
 - `%6.3f`：固字列定6個字元（含小數點），小數固定列印2位數。若整數小於2位數，會在左方填入空白字元，若小數小於2位數，會在數字右方填入「0」字元。
 
----
-
-```python
-print("姓名   座號  國文  數學  英文")
-print("%3s  %2d   %3d   %3d   %3d" % ("林大明", 1, 100, 87, 79))
-print("%3s  %2d   %3d   %3d   %3d" % ("陳阿中", 2, 74, 88, 100))
-print("%3s  %2d   %3d   %3d   %3d" % ("張小英", 11, 82, 65, 8))
-```
+[04_printf2.py](/sample_codes/part1/04_printf2.py)
 
 ---
 
@@ -194,26 +168,19 @@ print("{0} {1}".format("hello", "world"))
 print("{1} {0} {1}".format("hello", "world"))
 ```
 
+[05_format.py](/sample_codes/part1/05_format.py)
+
 ---
 
 ## f-string 格式化字串
 
 我們可以在字串前加上字母 "`f`" 或 "`F`"，然後使用大括號 "`{}`" 包含變數或表達式。這些大括號內的內容將被替換為對應變數或表達式的值。
 
-```python
-a=1
-b=2
-total=f"The sum of {a} and {b} is {a+b}."
-print(total)
-
-name="Alice"
-age=25
-print(f"My name is {name} and I am {age} years old.")
-```
+[06_fstring.py](/sample_codes/part1/06_fstring.py)
 
 ---
 
-## 練習題
+## 練習題 1
 
 請使用格式化輸出或f-string的方法，將學生的姓名、數學成績、英語成績、以及總分統計輸出。變數名稱：`name="Kerry"`、`math=70`、`eng=95`，輸出格式如下。
 
@@ -228,14 +195,17 @@ print(f"My name is {name} and I am {age} years old.")
 
 ## `input` 輸入命令
 
-- 語法：`變數 = input(提示字串)`
-- 提示字串是輸出一段訊息，告知使用者如何輸入。
+語法：`變數 = input(提示字串)`
+
+提示字串是輸出一段訊息，告知使用者如何輸入。
 
 ```python
 chinese = int(input("請輸入國文成績: "))
 math = int(input("請輸入數學成績: "))
 english = int(input("請輸入英文成績: "))
 ```
+
+[07_input.py](/sample_codes/part1/07_input.py)
 
 ---
 
@@ -297,21 +267,15 @@ english = int(input("請輸入英文成績: "))
 |`//=`|相除得到商數後再指定給原變數|`i//=5`|`2`|
 |`**=`|相加後再指定給原變數|`i**=3`|`1000`|
 
----
-
-```python
-deposit=int(input("請輸入本金存款金額："))
-times=1.02**6
-deposit*=times
-print(f"6 年後存款為：{deposit}")
-```
+[08_complex.py](/sample_codes/part1/08_complex.py)
 
 ---
 
 ## 運算子「`+`」的功能
 
-- 運算子「`+`」用於數值運算時是計算兩個運算元的總和
-- 運算子「`+`」用於字串組合時是將兩個運算元的字元組合在一起
+運算子「`+`」用於數值運算時是計算兩個運算元的總和。
+
+運算子「`+`」用於字串組合時是將兩個運算元的字元組合在一起。
 
 ---
 
@@ -329,10 +293,11 @@ print(f"6 年後存款為：{deposit}")
 
 ---
 
-## 練習題
+## 練習題 2
 
-- 利用鍵盤輸入兩個整數，透過第三個變數，將兩個整數值交換並輸出。
-- 挑戰：不透過第三個變數，完成兩數交換。
+利用鍵盤輸入兩個整數，透過第三個變數，將兩個整數值交換並輸出。
+
+挑戰：不透過第三個變數，完成兩數交換。
 
 ---
 
@@ -371,13 +336,7 @@ cond(no)->op_next
 op1->op_next
 ```
 
----
-
-```python
-pw=input("請輸入密碼：")
-if(pw=="1234"):
-    print("歡迎光臨！")
-```
+[09_password.py](/sample_codes/part1/09_password.py)
 
 ---
 
@@ -408,15 +367,7 @@ op1->op_next
 op2->op_next
 ```
 
----
-
-```python
-pw = input("請輸入密碼：")
-if(pw=="1234"):
-    print("歡迎光臨！")
-else:
-    print("密碼錯誤！")
-```
+[10_password2.py](/sample_codes/part1/10_password2.py)
 
 ---
 
@@ -456,19 +407,7 @@ op2->op_next
 op_else->op_next
 ```
 
-```python
-score = int(input("請輸入成績："))
-if score >= 90:
-    print("優等")
-elif score >= 80:
-    print("甲等")
-elif score >= 70:
-    print("乙等")
-elif score >= 60:
-    print("丙等")
-else:
-    print("丁等")
-```
+[11_grade.py](/sample_codes/part1/11_grade.py)
 
 ---
 
@@ -485,16 +424,23 @@ else:
 ## `range` 函式的語法
 
 - range 函式單一參數
-  - 語法為：`數列變數=range(正數值)`，例如：`list1=range(5)  #數列為0,1,2,3,4`
+
+  語法為：`數列變數=range(正數值)`，例如：`list1=range(5)  #數列為0,1,2,3,4`
+
 - range 函式二個參數
-  - 語法為：`數列變數=range(起始值,終止值)`，例如：`list2=range(3,8)   #數列值為3,4,5,6,7`
-  - 起始值及終止值皆可為負整數，例如：`list3=range(-2,4)   #數列值為-2,-1,0,1,2,3`
+  
+  語法為：`數列變數=range(起始值,終止值)`，例如：`list2=range(3,8)   #數列值為3,4,5,6,7`
+
+  起始值及終止值皆可為負整數，例如：`list3=range(-2,4)   #數列值為-2,-1,0,1,2,3`
+
 - range 函式三個參數
-  - 語法為：數列變數=range(起始值,終止值,間隔值)，例如：
-    `list4=range(3,8,1) #數列值為3,4,5,6,7`
-    `list5=range(3,8,2) #數列值為3,5,7`  
-  - 間隔值也可為負整數，此時起始值必須大於終止值，例如：
-    `list6=range(8,3,-1) #數列值為8,7,6,5,4`
+  
+  語法為：`數列變數=range(起始值,終止值,間隔值)`，例如：
+  `list4=range(3,8,1) #數列值為3,4,5,6,7`
+  `list5=range(3,8,2) #數列值為3,5,7`
+
+  間隔值也可為負整數，此時起始值必須大於終止值，例如：
+  `list6=range(8,3,-1) #數列值為8,7,6,5,4`
 
 ---
 
