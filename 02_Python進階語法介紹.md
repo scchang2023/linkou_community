@@ -97,3 +97,74 @@ print(list1[0])
 ```
 
 ---
+
+## 使用 for in 讀取串列
+
+- 語法：
+
+```python
+for 變數 in 串列:
+    程式區塊
+```
+
+- 例如：
+
+```python
+list1 = ["香蕉", "蘋果", "橘子"]
+for s in list1:
+    print(s)
+```
+
+---
+
+## 使用 for in range 讀取串列
+
+- 取得串列長度：迴圈中 range() 函式的範圍通常會利用 len() 函式計算串列的長度。例如：計算 scores 串列的長度，顯示結果為 3。
+
+```python
+scores=[83, 98, 56]
+print(len(scores)) # 3
+```
+
+- 以 for in range 讀取串列
+
+```python
+scores=[83, 98, 56]
+for i in range(len(scores)):
+    print(scores[i])
+```
+
+[03_list3.py](sample_codes/part2/02_list2.py)
+
+---
+
+## index() 搜尋
+
+- 語法：`索引值=串列名稱.index(串列元素)`
+- 例如：
+
+```python
+list1 = ["香蕉", "蘋果", "橘子"]
+n = list1.index("蘋果")
+print(n)
+m = list1.index("西瓜") # ValueError: '西瓜' is not in list
+```
+
+---
+
+## count() 計算次數
+
+- 語法：`次數=串列名稱. count(串列元素)`
+- 例如：
+
+```python
+list1 = ["香蕉", "蘋果", "橘子"]
+n = list1.count("蘋果")
+m = list1.count("西瓜")
+```
+
+---
+
+## 增加串列元素
+
+---
