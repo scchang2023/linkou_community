@@ -83,42 +83,43 @@ https://code.visualstudio.com/
 
 ## 資料型態（字串）
 
-- Python 字串（`str`）是變數值以一對雙引號「`"`」或單引號 「`'`」包起來，例如：
+Python 字串（`str`）是變數值以一對雙引號「`"`」或單引號 「`'`」包起來，例如：
   
-    ```python
-    str1 = "這是字串"
-    ```
+```python
+str1 = "這是字串"
+```
 
-- 如果字串要包含引號（雙引號或單引號），可使用另一種引號包住字串，例如：
+如果字串要包含引號（雙引號或單引號），可使用另一種引號包住字串，例如：
 
-    ```python
-    str2 = "小明說 '您好' "
-    str3 = '小花說 "早上好" '
-    ```
+```python
+str2 = "小明說 '您好' "
+str3 = '小花說 "早上好" '
+```
 
 ---
 
 ## `type` 命令
 
-- type 命令可以取得變數的資料型態，如果不確定變數的型態，可用 type 來查看，語法：`type(變數)`，例如：
+type 命令可以取得變數的資料型態，如果不確定變數的型態，可用 type 來查看，語法：`type(變數)`，例如：
 
-    ```python
-    print(type(23))             # <class 'int'>
-    print(type(25.0))           # <class 'float'>
-    print(type("Good moring!")) # <class 'str'>
-    print(type(True))           # <class 'bool'>
-    ```
+```python
+print(type(23))             # <class 'int'>
+print(type(25.0))           # <class 'float'>
+print(type("Good moring!")) # <class 'str'>
+print(type(True))           # <class 'bool'>
+```
 
 ---
 
 ## 資料型態轉換
 
-- Python 具有簡單的資料型態自動轉換功能：如整數與浮點運算，系統會先將整數轉換為浮點數再運算，運算結果為浮點數，例如：`num=5+7.8`
+Python 具有簡單的資料型態自動轉換功能：如整數與浮點運算，系統會先將整數轉換為浮點數再運算，運算結果為浮點數，例如：`num=5+7.8`
 
-- Python 強制資料型態轉換：  
-  - `int()`：強制轉換為整數資料型態。
-  - `float()`：強制轉換為浮點數資料型態。
-  - `str()`：強制轉換為字串資料型態。
+Python 強制資料型態轉換：
+
+- `int()`：強制轉換為整數資料型態。
+- `float()`：強制轉換為浮點數資料型態。
+- `str()`：強制轉換為字串資料型態。
 
 ---
 
@@ -145,7 +146,7 @@ print(b)
 
 ---
 
-## 「`%`」參數格式化 (1)
+## 「`%`」參數格式化
 
 - print 命令支援參數格式化功能，語法為：`print(變數 % 參數列)`
 - 常用的參數有：
@@ -166,8 +167,6 @@ print("%d + %d = %d"%(a,b,a+b))
 ```
 
 ---
-
-## 「`%`」參數格式化 (2)
 
 - 精確控制列印位置，讓出資料排列更整齊。
 - `%5d`：固定列印5個字元，若少於5位數，會在數字填入空白字元。
@@ -242,8 +241,9 @@ english = int(input("請輸入英文成績: "))
 
 ## 運算式
 
-- 指定資料做哪一種運算的是運算子
-- 進行運算的資料是運算元，例如：`3 + 5`， `+` 是運算子，`3`、`5` 是運算元。
+指定資料做哪一種運算的是運算子
+
+進行運算的資料是運算元，例如：`3 + 5`， `+` 是運算子，`3`、`5` 是運算元。
 
 ---
 
@@ -350,26 +350,26 @@ sum += score
 
 ## 單向判斷式（`if⋯`）
 
-- 「if⋯」為單向判斷式，是 if 指令中最簡單的型態，語法為：
+「if⋯」為單向判斷式，是 if 指令中最簡單的型態，語法為：
 
-    ```python
-    if (條件式):
-        程式區塊
-    ```
+```python
+if (條件式):
+    程式區塊
+```
 
-- 單向判斷式流程圖：
+單向判斷式流程圖：
 
-    ```flow
-    op_pre=>operation: 前一列程式
-    cond=>condition: 條件式
-    op1=>operation: 程式區塊
-    op_next=>operation: 後一列程式
+```flow
+op_pre=>operation: 前一列程式
+cond=>condition: 條件式
+op1=>operation: 程式區塊
+op_next=>operation: 後一列程式
 
-    op_pre->cond
-    cond(yes)->op1
-    cond(no)->op_next
-    op1->op_next
-    ```
+op_pre->cond
+cond(yes)->op1
+cond(no)->op_next
+op1->op_next
+```
 
 ---
 
@@ -383,30 +383,30 @@ if(pw=="1234"):
 
 ## 雙向判斷式（if⋯else）
 
-- 「if⋯else⋯」為雙向判斷式，語法為：
+「if⋯else⋯」為雙向判斷式，語法為：
 
-    ```python
-    if (條件式):
-        程式區塊一
-    else:
-        程式區塊二
-    ```
+```python
+if (條件式):
+    程式區塊一
+else:
+    程式區塊二
+```
 
-- 雙向判斷式流程圖：
+雙向判斷式流程圖：
 
-    ```flow
-    op_pre=>operation: 前一列程式
-    cond=>condition: 條件式
-    op1=>operation: 程式區塊一
-    op2=>operation: 程式區塊二
-    op_next=>operation: 後一列程式
+```flow
+op_pre=>operation: 前一列程式
+cond=>condition: 條件式
+op1=>operation: 程式區塊一
+op2=>operation: 程式區塊二
+op_next=>operation: 後一列程式
 
-    op_pre->cond
-    cond(yes)->op1
-    cond(no)->op2
-    op1->op_next
-    op2->op_next
-    ```
+op_pre->cond
+cond(yes)->op1
+cond(no)->op2
+op1->op_next
+op2->op_next
+```
 
 ---
 
@@ -422,39 +422,39 @@ else:
 
 ## 多向判斷式（if⋯elif⋯else）
 
-- 「if⋯elif⋯else」的語法為：
+「if⋯elif⋯else」的語法為：
 
-    ```python
-    if (條件式一):
-        程式區塊一
-    elif (條件式二):
-        程式區塊二
-    elif (條件式三):
-        …         
-    else:
-        程式區塊else
-    ```
+```python
+if (條件式一):
+    程式區塊一
+elif (條件式二):
+    程式區塊二
+elif (條件式三):
+    …         
+else:
+    程式區塊else
+```
 
-- 多向判斷式流程圖：
+多向判斷式流程圖：
 
-    ```flow
-    op_pre=>operation: 前一列程式
-    cond1=>condition: 條件式一
-    cond2=>condition: 條件式二
-    op1=>operation: 程式區塊一
-    op2=>operation: 程式區塊二
-    op_else=>operation: 程式區塊else
-    op_next=>operation: 後一列程式
+```flow
+op_pre=>operation: 前一列程式
+cond1=>condition: 條件式一
+cond2=>condition: 條件式二
+op1=>operation: 程式區塊一
+op2=>operation: 程式區塊二
+op_else=>operation: 程式區塊else
+op_next=>operation: 後一列程式
 
-    op_pre->cond1
-    cond1(yes)->op1
-    cond1(no)->cond2
-    cond2(yes)->op2
-    cond2(no)->op_else
-    op1->op_next
-    op2->op_next
-    op_else->op_next
-    ```
+op_pre->cond1
+cond1(yes)->op1
+cond1(no)->cond2
+cond2(yes)->op2
+cond2(no)->op_else
+op1->op_next
+op2->op_next
+op_else->op_next
+```
 
 ```python
 score = int(input("請輸入成績："))
