@@ -1,0 +1,5 @@
+person=int(input("請輸入學生人數: "))
+apple=int(input("請輸入蘋果總數: "))
+ret=divmod(apple, person)
+print(f"每個學生可分得蘋果{ret[0]}個")
+print(f"蘋果剩餘{ret[1]}個")

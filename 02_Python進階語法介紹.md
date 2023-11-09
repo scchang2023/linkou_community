@@ -80,5 +80,20 @@ list4 = ["香蕉", "蘋果", "橘子"]
 print(list4[-4]) # IndexError: list index out of range
 ```
 
+[01_list1.py](sample_codes/part2/01_list1.py)
+
 ---
 
+## 改變串列元素改變串列元素
+
+- 語法為：串列名稱[索引]=元素內容
+- 例如：
+
+```python
+list1=[1, 2, 3, 4, 5]
+print(list1[0])
+list1[0] = 9
+print(list1[0])
+```
+
+---
