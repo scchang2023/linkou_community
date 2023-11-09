@@ -1,7 +1,9 @@
 ---
-title: Python</br>基本語法介紹
-theme: sky
+
+type: slide
+
 ---
+
 # Python</br>基本語法介紹
 
 章士祺
