@@ -14,6 +14,8 @@
 
 https://www.python.org/
 
+---
+
 ## 安裝 Visual Studio Code
 
 https://code.visualstudio.com/
@@ -22,28 +24,29 @@ https://code.visualstudio.com/
 
 ## 第一隻程式
 
-- 印出 Hello Python
-- 執行程式
+印出 Hello Python
+
+執行程式
 
 ---
 
 ## 註解
 
-- 單行註解：Python可在程式碼中加入`#`做為單行註解，例如：
+單行註解：Python可在程式碼中加入`#`做為單行註解，例如：
 
-    ```python
-    # 這是單行註解
-    ```
+```python
+# 這是單行註解
+```
 
-- 多行註解：在註解的區塊前後加入三個單引號 `'''` 或三個雙引號 `"""` 作為多行註解，例如：
+多行註解：在註解的區塊前後加入三個單引號 `'''` 或三個雙引號 `"""` 作為多行註解，例如：
 
-    ```python
-    '''
-    第一行註解
-    第二行註解
-    第三行註解
-    '''
-    ```
+```python
+'''
+第一行註解
+第二行註解
+第三行註解
+'''
+```
 
 ---
 
@@ -64,7 +67,9 @@ https://code.visualstudio.com/
 - 英文字母大小寫視為不同變數名稱。
 - 變數名稱不能與 Python 內建的保留字相同。
 
+    ```python !
     False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
+    ```
 
 ---
 

@@ -217,3 +217,9 @@ print(list1)
 ```
 
 [04_append.py](sample_codes/part2/04_append.py)
+
+---
+
+## 刪除串列元素
+
+---
