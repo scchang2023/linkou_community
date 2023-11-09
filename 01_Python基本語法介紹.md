@@ -1,12 +1,9 @@
 ---
-
-title: 取代標題一的檔案名稱
-slideOptions:  #投影片選項, 兩個空白開頭
-  theme: sky   #主題
-  transition: zoom  #轉場動畫
-
+slideOptions:
+  theme: sky
 ---
 
+# Python</br>基本語法介紹
 
 章士祺
 
