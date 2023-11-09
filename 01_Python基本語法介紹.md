@@ -1,8 +1,3 @@
----
-slideOptions:
-  theme: sky
----
-
 # Python</br>基本語法介紹
 
 章士祺
