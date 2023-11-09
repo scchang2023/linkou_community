@@ -46,4 +46,39 @@ list3=[1, "香蕉", True]
 
 例如以下是二維串列範例：
 
+```python
+list5=[["joe","1234"], ["mary","3368"], ["david","abcd"]]
+print(list5[1])
+print(list5[1][1])
+```
+
 ---
+
+## 讀取串列元素
+
+- 語法：`串列名稱[索引]`
+- 例如：
+
+```python
+list1 = [1, 2, 3, 4]
+print(list1[0])
+```
+
+---
+
+- 索引值是從 0 開始計數。索引值不可超出串列的範圍，否則執行時會產生「list index out of range」錯誤。例如：
+
+```python
+list4 = ["香蕉", "蘋果", "橘子"]
+print(list4[3]) # IndexError: list index out of range
+```
+
+- 索引值可以是負值，表示由串列的最後向前取出， 「-1」表示最後一個元素，「-2」表示倒數第二個元素。同理，負數索引值不可超出串列的範圍，否則執行時會產生錯誤。例如：
+
+```python
+list4 = ["香蕉", "蘋果", "橘子"]
+print(list4[-4]) # IndexError: list index out of range
+```
+
+---
+
