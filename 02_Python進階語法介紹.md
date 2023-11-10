@@ -388,3 +388,7 @@ tuple2 = (1, "紅豆", True)
 tuple3 = ("綠豆", "紅豆", "花生")
 tuple3[1]="黃豆" # TypeError: 'tuple' object does not support item assignment
 ```
+
+---
+
+## 串列和元組互相轉換
