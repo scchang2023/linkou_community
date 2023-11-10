@@ -337,3 +337,54 @@ print(list1)
 ```
 
 [06_sorted.py](/sample_codes/part2/06_sorted.py)
+
+---
+
+## 串列常用方法列表
+
+下表串列常用方法：`list1=[1,2,3,4,5,6]`
+
+| 方法                  | 說明          | 範例                 | 結果              |
+|---------------------|-------------|--------------------|-----------------|
+| list1[n1:n2]        | 取出n1到n2-1元素 | list2=list1[1:4]   | list2=[2,3,4]   |
+| list1[n1:n2:n3]     | 同上，取出間隔為n3  | list2=list1[1:4:2] | list2=[2,4]     |
+| del list1[n1:n2]    | 刪除n1到n2-1元素 | del list1[1:4]     | list1=[1,5,6]   |
+| del list1[n1:n2:n3] | 同上，刪除間隔為n3  | del list1[1:4:2]   | list1=[1,3,5,6] |
+| n=len(list1)        | 取得串列元素數目    | n=len(list1)       | n=6             |
+| n=min(list1)        | 取得元素最小值     | n=min(list1)       | n=1             |
+| n=max(list1)        | 取得元素最大值     | n=max(list1)       | n=6             |
+| n=list1.index(n1)   | 第1次n1元素的索引值 | n=list1.index(3)   | n=2             |
+| n=list1.count(n1)   | n1元素出現的次數   | n=list1.count(3)   | n=1             |
+
+---
+
+| 方法               | 說明                | 範例                 | 結果                     |
+|------------------|-------------------|--------------------|------------------------|
+| list1.append(n1) | 將n1元素加在串列最後       | list1.append(8)    | list1=[1,2,3,4,5,6,8]  |
+| list1[n1:n2:n3]  | 同上，取出間隔為n3        | list2=list1[1:4:2] | list2=[2,4]            |
+| n=list1.pop()    | 取出最後1個元素並由串列中移除元素 | n=list1.pop()      | n=6, list1=[1,2,3,4,5] |
+| list1.remove(n1) | 移除第1次的n1元素        | list1.remove(3)    | list1=[1,2,4,5,6]      |
+| list1.reverse()  | 反轉串列順序            | list1.reverse()    | list1=[6,5,4,3,2,1]    |
+| list1.sort()     | 將串列由小到大排序         | list1.sort()       | list1=[1,2,3,4,5,6]    |
+
+---
+
+## 元組（Tuple）
+
+建立元組，使用小括號
+
+語法：`元組名稱=(元素1,元素2, ...)`
+
+例如：
+
+```python
+tuple1 = (1, 2, 3, 4, 5)
+tuple2 = (1, "紅豆", True)
+```
+
+元組的使用方式與串列相同，但不能修改元素值，否則會產生錯誤
+
+```python
+tuple3 = ("綠豆", "紅豆", "花生")
+tuple3[1]="黃豆" # TypeError: 'tuple' object does not support item assignment
+```
