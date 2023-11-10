@@ -82,7 +82,7 @@ list4 = ["香蕉", "蘋果", "橘子"]
 print(list4[-4]) # IndexError: list index out of range
 ```
 
-[01_list1.py](sample_codes/part2/01_list1.py)
+[01_list1.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/01_list1.py)
 
 ---
 
@@ -118,20 +118,22 @@ for s in list1:
     print(s)
 ```
 
-[02_list2.py](sample_codes/part2/02_list2.py)
+[01_list2.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/02_list2.py)
 
 ---
 
 ## 使用 for in range 讀取串列
 
-取得串列長度：迴圈中 range() 函式的範圍通常會利用 len() 函式計算串列的長度。例如：計算 scores 串列的長度，顯示結果為 3。
+取得串列長度：
+
+迴圈中 range() 函式的範圍通常會利用 len() 函式計算串列的長度。例如：計算 scores 串列的長度，顯示結果為 3。
 
 ```python
 scores=[83, 98, 56]
 print(len(scores)) # 3
 ```
 
-以 for in range 讀取串列
+以 for in range 讀取串列：
 
 ```python
 scores=[83, 98, 56]
@@ -139,7 +141,7 @@ for i in range(len(scores)):
     print(scores[i])
 ```
 
-[03_list3.py](sample_codes/part2/03_list3.py)
+[03_list3.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/03_list3.py)
 
 ---
 
