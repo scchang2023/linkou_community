@@ -1,7 +1,7 @@
 ---
-# marp: true
-# theme: gaia
-# class: invert
+theme: sky
+width: 1280
+height: 960
 ---
 
 # 輕鬆學Python程式

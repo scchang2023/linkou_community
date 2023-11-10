@@ -1,3 +1,8 @@
+---
+theme: sky
+width: 1280
+height: 960
+---
 # Python</br>基本語法介紹
 
 章士祺
