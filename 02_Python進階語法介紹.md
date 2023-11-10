@@ -14,7 +14,7 @@ height: 960
 
 串列（又稱為「清單」或「列表」），與其他語言的「陣列（Array）」相同，其功能與變數相類似，是提供儲存資料的記憶體空間。
 
-</br></br>![01_串列元素配置](./icons/01_串列元素配置.png)
+</br></br>![01_串列元素配置](https://github.com/scchang2023/linkou_community/blob/main/icons/01_list_element_arrange.png)
 
 ---
 
@@ -25,7 +25,7 @@ height: 960
 一維串列的宣告方式是將元素置於中括號 ([]) 中，每個元素之間以逗號分隔，語法為：`串列名稱=[元素1,元素2,…]`
 
 例如：宣告 `score` 串列，其元素內容為 `[1, 2, 3, 4, 5]`。
-![01_串列元素內容](./icons/01_串列元素內容.png)
+![01_串列元素內容](https://github.com/scchang2023/linkou_community/blob/main/icons/01_list_element_content.png)
 
 ---
 
@@ -218,10 +218,58 @@ list1.insert(12, "高麗菜")
 print(list1)
 ```
 
-[04_append.py](sample_codes/part2/04_append.py)
+[04_append.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/04_append.py)
 
 ---
 
 ## 刪除串列元素
+
+### remvoe()方法
+
+語法：`串列名稱.remove(串列元素)`
+
+例如：刪除 list1 串列中「夏天」的串列元素。
+
+```python
+list1 =["春天", "夏天", "秋天", "冬天"]
+list1.remove("夏天")
+print(list1)
+```
+
+---
+
+### pop()方法
+
+語法：`串列名稱.pop(索引值)`
+
+例如：
+
+```python
+list1 = [1, 2, 3, 4, 5, 6]
+n = list1.pop()
+print(list1, n)
+n = list1.pop(2)
+print(list1, n)
+```
+
+---
+
+### del 刪除串列元素
+
+刪除串列單一元素語法：`del 串列名稱(n1)`
+
+刪除串列指定範圍元素的語法：`del 串列名稱(n1:n2[:n3])`
+
+例如：
+
+```python
+list1 = [1, 2, 3, 4, 5, 6]
+del list1[1]
+print(list1)
+list2 = [1, 2, 3, 4, 5, 6]
+del list2[1:5:2]
+print(list2)
+```
+[05_remove.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/05_remove.py)
 
 ---
