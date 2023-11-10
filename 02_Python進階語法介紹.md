@@ -300,3 +300,40 @@ list1 = [3, 2, 1, 5]
 list1.reverse()
 print(list1)
 ```
+
+---
+
+## 由大到小排序
+
+語法：
+
+`串列名稱.sort()`
+
+`串列名稱.reverse()`
+
+例如：
+
+```python
+list1 = [3, 2, 1, 5]
+list1.sort()
+print(list1)
+list1.reverse()
+print(list1)
+```
+
+---
+
+## sorted() 排序
+
+語法：`串列名稱2=sorted(串列名稱1, reverse=True)`
+
+例如：將 list1 串列由大到小排序，並儲存在 list2 串列。
+
+```python
+list1 = [3, 2, 1, 5]
+list2=sorted(list1, reverse=True)
+print(list2)
+print(list1)
+```
+
+[06_sorted.py](/sample_codes/part2/06_sorted.py)
