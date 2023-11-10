@@ -14,7 +14,7 @@ height: 960
 
 串列（又稱為「清單」或「列表」），與其他語言的「陣列（Array）」相同，其功能與變數相類似，是提供儲存資料的記憶體空間。
 
-</br></br>![01_串列元素配置](https://github.com/scchang2023/linkou_community/blob/main/icons/01_list_element_arrange.png)
+![01_串列元素配置](/icons/01_串列元素配置.png)
 
 ---
 
@@ -25,7 +25,7 @@ height: 960
 一維串列的宣告方式是將元素置於中括號 ([]) 中，每個元素之間以逗號分隔，語法為：`串列名稱=[元素1,元素2,…]`
 
 例如：宣告 `score` 串列，其元素內容為 `[1, 2, 3, 4, 5]`。
-![01_串列元素內容](https://github.com/scchang2023/linkou_community/blob/main/icons/01_list_element_content.png)
+![01_串列元素內容](/icons/01_串列元素內容.png)
 
 ---
 
@@ -82,7 +82,7 @@ list4 = ["香蕉", "蘋果", "橘子"]
 print(list4[-4]) # IndexError: list index out of range
 ```
 
-[01_list1.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/01_list1.py)
+[01_list1.py](/sample_codes/part2/01_list1.py)
 
 ---
 
@@ -118,7 +118,7 @@ for s in list1:
     print(s)
 ```
 
-[01_list2.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/02_list2.py)
+[01_list2.py](/sample_codes/part2/02_list2.py)
 
 ---
 
@@ -141,7 +141,7 @@ for i in range(len(scores)):
     print(scores[i])
 ```
 
-[03_list3.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/03_list3.py)
+[03_list3.py](/sample_codes/part2/03_list3.py)
 
 ---
 
@@ -218,7 +218,7 @@ list1.insert(12, "高麗菜")
 print(list1)
 ```
 
-[04_append.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/04_append.py)
+[04_append.py](/sample_codes/part2/04_append.py)
 
 ---
 
@@ -270,6 +270,33 @@ list2 = [1, 2, 3, 4, 5, 6]
 del list2[1:5:2]
 print(list2)
 ```
-[05_remove.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/05_remove.py)
+
+[05_remove.py](/sample_codes/part2/05_remove.py)
 
 ---
+
+## sort() 由小到大排序
+
+語法：`串列名稱.sort()`
+
+例如：將 list1 串列由小到大排序。
+
+```python
+list1 = [3, 2, 1, 5]
+list1.sort()
+print(list1)
+```
+
+---
+
+## reverse() 反轉串列順序
+
+語法：`串列名稱.reverse()`
+
+例如：將 list1 串列順序反轉。
+
+```python
+list1 = [3, 2, 1, 5]
+list1.reverse()
+print(list1)
+```

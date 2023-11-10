@@ -142,7 +142,7 @@ Python 強制資料型態轉換：
 
 - `end`：結束字元，列印完畢後自動加入的字元，預設值為換列字元("`\n`")，所以下一次執行 print 命令會列印在下一列。
 
-[02_print.py](https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/02_print.py)
+[02_print.py](/sample_codes/part1/02_print.py)
 
 ---
 
