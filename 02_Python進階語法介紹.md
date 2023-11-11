@@ -509,16 +509,50 @@ print(dict2)
 
 ### in 功能
 
+- 許多字典功能傳送「鍵」做為參數時，若做為參數的「鍵」不存在就會產生錯誤而讓程式中斷執行。
+- in 功能會檢查字典中的「鍵」是否存在，語法為：`鍵 in 字典名稱`
+- 如果「鍵」存在就傳回 True，「鍵」不存在就傳回 False。
+- in 功能可在執行如果「鍵」不存在就會產生錯誤的程式之前進行檢查， 確定「鍵」存在才執行該程式。
+
+[08_in.py](/sample_codes/part2/08_in.py)
+
 ---
 
 ### keys 及 values 功能
+
+- 字典的 keys() 功能可取得字典中所有「鍵」，資料型態為 dict_keys，雖然 dict_keys 資料型態看起來像串列，但它不能以索引方式取得元素值：
+
+```pytho
+dict1={"香蕉":20, "蘋果":50, "橘子":30}
+key1 = dict1.keys()
+print(key1[0]) #TypeError: 'dict_keys' object is not subscriptable
+```
+
+- 必須將 dict_keys 資料型態以 list 函式轉換為串列才能取得元素值：
+
+```python
+dict1={"香蕉":20, "蘋果":50, "橘子":30}
+key1 = list(dict1.keys())
+print(key1[0]) # 香蕉
+```
+
+- values() 功能可取得字典中所有「值」， 資料型態為 dict_values。dict_values 資料型態的用法與 dict_keys 完全相同。
+
+[09_keyvalue.py](/sample_codes/part2/09_keyvalue.py)
 
 ---
 
 ### items 功能
 
+- items() 功能可同時取得所有「鍵- 值」組成的組合，資料型態為 dict_items。
+- 將 dict_items 資料型態以 list 函式轉換為串列後相當於二維串列，可以取得個別元素值。
+
+[10_item.py](/sample_codes/part2/10_item.py)
+
 ---
 
 ### 練習題 2
+
+不同星座的人有不同的性格特徵。『鍵』為星座名稱，『值』為性格特徵。利用items功能顯示星座名稱及該星座的性格特徵。
 
 ---
