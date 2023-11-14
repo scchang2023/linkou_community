@@ -957,6 +957,8 @@ f.close()
         print("變數 n 不存在!")
     ```
 
+[24_try1.py](/sample_codes/part2/24_try1.py)
+
 - 若加入except的參數，就可以觀察錯誤訊息：
 
     ```python
@@ -966,6 +968,25 @@ f.close()
         print("變數 n 不存在!") # name 'n' is not defined
     ```
 
+[25_try2.py](/sample_codes/part2/25_try2.py)
+
+---
+
+- 若加入另一個關鍵字 finally，無論例外有沒有發生都會執行 finally 後的程式區塊：
+
+    ```python
+    try:
+        print(n)
+    except Exception as e:
+        print("變數 n 不存在!") # name 'n' is not defined
+    finally:
+        print("一定會執行的程式區塊")
+    ```
+
+[26_try3.py](/sample_codes/part2/26_try3.py)
+
 ---
 
 ### 練習題 4
+
+輸入兩個正整數，求兩數之和。程式中，若輸入非數值資料，以 try⋯except 捕捉發生的錯誤。
