@@ -85,7 +85,7 @@ list4 = ["香蕉", "蘋果", "橘子"]
 print(list4[-4]) # IndexError: list index out of range
 ```
 
-[01_list1.py](/sample_codes/part2/01_list1.py)
+[01_list1.py][01_list1.py]
 
 ---
 
@@ -121,7 +121,7 @@ for s in list1:
     print(s)
 ```
 
-[01_list2.py](/sample_codes/part2/02_list2.py)
+[02_list2.py][02_list2.py]
 
 ---
 
@@ -144,7 +144,7 @@ for i in range(len(scores)):
     print(scores[i])
 ```
 
-[03_list3.py](/sample_codes/part2/03_list3.py)
+[03_list3.py][03_list3.py]
 
 ---
 
@@ -221,7 +221,7 @@ list1.insert(12, "高麗菜")
 print(list1)
 ```
 
-[04_append.py](/sample_codes/part2/04_append.py)
+[04_append.py][04_append.py]
 
 ---
 
@@ -274,7 +274,7 @@ del list2[1:5:2]
 print(list2)
 ```
 
-[05_remove.py](/sample_codes/part2/05_remove.py)
+[05_remove.py][05_remove.py]
 
 ---
 
@@ -339,7 +339,7 @@ print(list2)
 print(list1)
 ```
 
-[06_sorted.py](/sample_codes/part2/06_sorted.py)
+[06_sorted.py][06_sorted.py]
 
 ---
 
@@ -471,7 +471,7 @@ print(dict2)
 | 沒有傳入預設值 | 鍵存在</br>鍵不存在 | 返回鍵對應的值</br>返回None |
 | 有傳入預設值  | 鍵存在</br>鍵不存在 | 返回鍵對應的值</br>返回預設值  |
 
-[07_dictget.py](/sample_codes/part2/07_dictget.py)
+[07_dictget.py][07_dictget.py]
 
 ### 修改字典
 
@@ -516,7 +516,7 @@ print(dict2)
 - 如果「鍵」存在就傳回 True，「鍵」不存在就傳回 False。
 - in 功能可在執行如果「鍵」不存在就會產生錯誤的程式之前進行檢查， 確定「鍵」存在才執行該程式。
 
-[08_in.py](/sample_codes/part2/08_in.py)
+[08_in.py][08_in.py]
 
 ---
 
@@ -540,7 +540,7 @@ print(key1[0]) # 香蕉
 
 - values() 功能可取得字典中所有「值」， 資料型態為 dict_values。dict_values 資料型態的用法與 dict_keys 完全相同。
 
-[09_keyvalue.py](/sample_codes/part2/09_keyvalue.py)
+[09_keyvalue.py][09_keyvalue.py]
 
 ---
 
@@ -549,7 +549,7 @@ print(key1[0]) # 香蕉
 - items() 功能可同時取得所有「鍵- 值」組成的組合，資料型態為 dict_items。
 - 將 dict_items 資料型態以 list 函式轉換為串列後相當於二維串列，可以取得個別元素值。
 
-[10_item.py](/sample_codes/part2/10_item.py)
+[10_item.py][10_item.py]
 
 ---
 
@@ -581,7 +581,7 @@ split 函式的功能與join 函式相反，是將一個字串以指定方式分
 
 「分隔字串」可有可無，若未傳入分隔字串，其預設值為 1 個空白字元
 
-[13_split.py](/sample_codes/part2/13_split.py)
+[13_split.py][13_split.py]
 
 ---
 
@@ -603,6 +603,8 @@ endswith 函式的功能與 startswith 函式雷同，只是 endswith 函式檢�
 
 如果字串是以「結尾字串」結束就傳回 True，否則就傳回 False
 
+[14_startswith.py][14_startswith.py]
+
 ---
 
 ### 移除前後空白字元
@@ -614,6 +616,8 @@ lstrip 函式可移除字串左方的空白字元。
 語法為：字串.lstrip()
 
 rstrip 函式可移除字串右方的空白字元，strip 函式則是同時移除字串左、右方的空白字元。注意：在文字之間的空白字元不會移除。
+
+[15_strip.py][15_strip.py]
 
 ---
 
@@ -639,6 +643,8 @@ rstrip 函式可移除字串右方的空白字元，strip 函式則是同時移�
 
 - 如果將「取代字串」設為空字串 ("")，其效果就是移除字串中的「被取代字串」。
 
+[16_find_replace.py][16_find_replace.py]
+
 ---
 
 ## 函式
@@ -662,7 +668,7 @@ def 函式名稱(參數1, 參數2, ...):
 
 - 如果參數的數量較多，常會搞錯參數順序而導致錯誤結果，呼叫函式時可以輸入參數名稱，此種方式與參數順序無關，可以減少錯誤。不過輸入參數名稱方式會多輸入不少文字，降低建立程式效率。
 
-[11_ctof.py](/sample_codes/part2/11_ctof.py)
+[11_ctof.py][11_ctof.py]
 
 ---
 
@@ -694,7 +700,7 @@ python常用的數值函式有：
 | str(x)     | 將x轉成字串          | str(56)        | "56"  |
 | sum(串列)    | 計算串列元素的總和       | sum([1,3,5,7]) | 16    |
 
-[12_divmod.py](/sample_codes/part2/12_divmod.py)
+[12_divmod.py][12_divmod.py]
 
 ---
 
@@ -789,7 +795,7 @@ python常用的字串函式有：
 
 - 語法為：亂數套件別名.random()
 
-[17_randint.py](/sample_codes/part2/17_randint.py)
+[17_randint.py][17_randint.py]
 
 ---
 
@@ -811,7 +817,7 @@ python常用的字串函式有：
 - 如果參數是字串，就隨機由字串中取得指定數量的字元；如果參數是串列，就隨機由串列中取得指定數量的元素。
 - sample 函式最重要的用途是可以由串列中取得指定數量且不重複的元素，這使得設計樂透開獎應用程式變得輕鬆愉快。
 
-[18_sample.py](/sample_codes/part2/18_sample.py)
+[18_sample.py][18_sample.py]
 
 ---
 
@@ -851,6 +857,8 @@ Python中常用的時間模組函式有
 - 語法為：時間套件別名.ctime([時間數值])
 - ctime 函式的傳回值格式為：`星期 月份 日數 時:分:秒 西元`
 
+[19_time.py][19_time.py]
+
 #### sleep 函式
 
 - sleep 函式可讓程式休息一段時間，即程式停止執行一段時間。
@@ -888,7 +896,9 @@ f=open('file1.txt','r')
 f.close()
 ```
 
-[20_filewrite.py](/sample_codes/part2/20_filewrite.py) [21_fileread1.py](/sample_codes/part2/21_fileread1.py)
+[20_filewrite.py][20_filewrite.py]
+
+[21_fileread1.py][21_fileread1.py]
 
 ---
 
@@ -896,7 +906,7 @@ f.close()
 
 可以使用with...as 語法來簡化，語法結束後自動關閉開啟的檔案
 
-[22_fileread2.py](/sample_codes/part2/22_fileread2.py)
+[22_fileread2.py][22_fileread2.py]
 
 ---
 
@@ -930,6 +940,8 @@ f.close()
 | write(str)   | 將指定的字串寫入文件中，它沒有傳回值。        |
 | writable()   | 測試是否可寫入                    |
 
+[23_readlines.py][23_readlines.py]
+
 ---
 
 ### 練習題 3
@@ -957,7 +969,7 @@ f.close()
         print("變數 n 不存在!")
     ```
 
-[24_try1.py](/sample_codes/part2/24_try1.py)
+[24_try1.py][24_try1.py]
 
 - 若加入except的參數，就可以觀察錯誤訊息：
 
@@ -968,7 +980,7 @@ f.close()
         print("變數 n 不存在!") # name 'n' is not defined
     ```
 
-[25_try2.py](/sample_codes/part2/25_try2.py)
+[25_try2.py][25_try2.py]
 
 ---
 
@@ -983,10 +995,37 @@ f.close()
         print("一定會執行的程式區塊")
     ```
 
-[26_try3.py](/sample_codes/part2/26_try3.py)
+[26_try3.py][26_try3.py]
 
 ---
 
 ### 練習題 4
 
 輸入兩個正整數，求兩數之和。程式中，若輸入非數值資料，以 try⋯except 捕捉發生的錯誤。
+
+[01_list1.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/01_list1.py
+[02_list2.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/02_list2.py
+[03_list3.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/03_list3.py
+[04_append.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/04_append.py
+[05_remove.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/05_remove.py
+[06_sorted.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/06_sorted.py
+[07_dictget.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/07_dictget.py
+[08_in.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/08_in.py
+[09_keyvalue.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/09_keyvalue.py
+[10_item.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/10_item.py
+[11_ctof.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/11_ctof.py
+[12_divmod.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/12_divmod.py
+[13_split.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/13_split.py
+[14_startswith.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/14_startswith.py
+[15_strip.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/15_strip.py
+[16_find_replace.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/16_find_replace.py
+[17_randint.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/17_randint.py
+[18_sample.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/18_sample.py
+[19_time.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/19_time.py
+[20_filewrite.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/20_filewrite.py
+[21_fileread1.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/21_fileread1.py
+[22_fileread2.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/22_fileread2.py
+[23_readlines.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/23_readlines.py
+[24_try1.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/24_try1.py
+[25_try2.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/25_try2.py
+[26_try3.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/26_try3.py
