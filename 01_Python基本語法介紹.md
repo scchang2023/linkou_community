@@ -32,7 +32,7 @@ https://code.visualstudio.com/
 
 ---
 
-## 註解
+### 註解
 
 - 單行註解：Python可在程式碼中加入`#`做為單行註解，例如：
 
@@ -94,7 +94,7 @@ False, None, True, and, as, assert, async, await, break, class, continue, def, d
 
 ---
 
-## 字串
+### 字串
 
 Python 字串（`str`）是變數值以一對雙引號「`"`」或單引號 「`'`」包起來，例如：
   
