@@ -869,6 +869,43 @@ Python中常用的時間模組函式有
 
 ## 檔案處理
 
+### 開啟檔案
+
+語法：open(filename, mode, encode)
+open() 函式中最常使用的參數是 filename、mode 和 encode，其中只有參數 filename 是必填，其他參數省略時會使用預設值。開啟檔案有三種模式：
+
+- r ：讀取模式，此為預設模試。
+- w ：寫入模試，若檔案已存在，內容將會被覆蓋。
+- a ：附加模試，若檔案已存在，內容將會被加至尾端。
+
+---
+
+使用 open 函式時會建立一個物件，利用這個物件就可以處理檔案，檔案處理結束要以 close 方法關閉檔案。
+
+```python
+f=open('file1.txt','r')
+...
+f.close()
+```
+
+[20_filewrite.py](/sample_codes/part2/20_filewrite.py) [21_fileread1.py](/sample_codes/part2/21_fileread1.py)
+
+---
+
+### 使用with...as 語法
+
+可以使用with...as 語法來簡化，語法結束後自動關閉開啟的檔案
+
+[22_fileread2.py](/sample_codes/part2/22_fileread2.py)
+
+---
+
+### 設定檔案的編碼
+
+---
+
+### 常用處理檔案內容的方法
+
 ---
 
 ### 練習題 3
