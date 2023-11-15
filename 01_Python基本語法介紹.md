@@ -4,11 +4,14 @@
 # height: 960
 # marp: true
 ---
+
 # Python</br>基本語法介紹
 
 章士祺
 
 ---
+
+[TOC]
 
 ## 開發環境
 
