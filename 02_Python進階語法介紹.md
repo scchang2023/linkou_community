@@ -9,8 +9,6 @@
 
 章士祺
 
-[TOC]
-
 ---
 
 ## 串列的操作
@@ -19,7 +17,7 @@
 
 串列（又稱為「清單」或「列表」），與其他語言的「陣列（Array）」相同，其功能與變數相類似，是提供儲存資料的記憶體空間。
 
-![02_串列元素配置][02_串列元素配置]
+![02_串列元素配置](https://hackmd.io/_uploads/H1ZGYCZEp.png)
 
 ---
 
@@ -31,7 +29,8 @@
 
 例如：宣告 `score` 串列，其元素內容為 `[1, 2, 3, 4, 5]`。
 
-![02_串列元素內容][02_串列元素內容]
+![02_串列元素內容](https://hackmd.io/_uploads/Hku4FAWN6.png)
+
 
 ---
 
@@ -444,7 +443,9 @@ tuple2.append(8)
 ### 字典取值
 
 字典，與串列最大的不同在於串列元素在記憶體中是依序排列，而字典元素則是隨意放置，沒有一定順序。
-![02_字典元素配置][02_字典元素配置]
+
+![02_字典元素配置](https://hackmd.io/_uploads/B1m2FAbEp.png)
+
 
 基本取值方式
 
@@ -1006,9 +1007,6 @@ f.close()
 
 輸入兩個正整數，求兩數之和。程式中，若輸入非數值資料，以 try⋯except 捕捉發生的錯誤。
 
-[02_串列元素配置]: icons/02_串列元素配置.png
-[02_串列元素內容]: icons/02_串列元素內容.png
-[02_字典元素配置]: icons/02_字典元素配置.png
 [01_list1.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/01_list1.py
 [02_list2.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/02_list2.py
 [03_list3.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/03_list3.py
