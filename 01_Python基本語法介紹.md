@@ -149,7 +149,7 @@ Python 強制資料型態轉換：
 
 - `end`：結束字元，列印完畢後自動加入的字元，預設值為換列字元("`\n`")，所以下一次執行 print 命令會列印在下一列。
 
-[02_print.py](/sample_codes/part1/02_print.py)
+[02_print.py][02_print.py]
 
 ---
 
@@ -166,7 +166,7 @@ Python 強制資料型態轉換：
 |`%s`|以字串資料型態輸出|
 |`%e`或`%E`|以科學記號方式輸出|
 
-[03_printf.py](/sample_codes/part1/03_printf.py)
+[03_printf.py][03_printf.py]
 
 ---
 
@@ -178,7 +178,7 @@ Python 強制資料型態轉換：
 
 - `%6.3f`：固字列定6個字元（含小數點），小數固定列印2位數。若整數小於2位數，會在左方填入空白字元，若小數小於2位數，會在數字右方填入「0」字元。
 
-[04_printf2.py](/sample_codes/part1/04_printf2.py)
+[04_printf2.py][04_printf2.py]
 
 ---
 
@@ -192,7 +192,7 @@ print("{0} {1}".format("hello", "world"))
 print("{1} {0} {1}".format("hello", "world"))
 ```
 
-[05_format.py](/sample_codes/part1/05_format.py)
+[05_format.py][05_format.py]
 
 ---
 
@@ -200,7 +200,7 @@ print("{1} {0} {1}".format("hello", "world"))
 
 我們可以在字串前加上字母 "`f`" 或 "`F`"，然後使用大括號 "`{}`" 包含變數或表達式。這些大括號內的內容將被替換為對應變數或表達式的值。
 
-[06_fstring.py](/sample_codes/part1/06_fstring.py)
+[06_fstring.py][06_fstring.py]
 
 ---
 
@@ -231,7 +231,7 @@ math = int(input("請輸入數學成績: "))
 english = int(input("請輸入英文成績: "))
 ```
 
-[07_input.py](/sample_codes/part1/07_input.py)
+[07_input.py][07_input.py]
 
 ---
 
@@ -293,7 +293,7 @@ english = int(input("請輸入英文成績: "))
 |`//=`|相除得到商數後再指定給原變數|`i//=5`|`2`|
 |`**=`|相加後再指定給原變數|`i**=3`|`1000`|
 
-[08_complex.py](/sample_codes/part1/08_complex.py)
+[08_complex.py][08_complex.py]
 
 ---
 
@@ -354,7 +354,7 @@ cond(no)->op_next
 op1->op_next
 ```
 
-[09_password.py](/sample_codes/part1/09_password.py)
+[09_password1.py][09_password1.py]
 
 ---
 
@@ -387,7 +387,7 @@ op1->op_next
 op2->op_next
 ```
 
-[10_password2.py](/sample_codes/part1/10_password2.py)
+[10_password2.py][10_password2.py]
 
 ---
 
@@ -429,9 +429,10 @@ op2->op_next
 op_else->op_next
 ```
 
-[11_grade.py](/sample_codes/part1/11_grade.py)
+[11_grade.py][11_grade.py]
 
 ---
+
 ## 迴圈
 
 ### `range` 函式
@@ -501,13 +502,15 @@ cond(no)->op_end
 op1->cond
 ```
 
+[12_numtotal.py][12_numtotal.py]
+
 ---
 
 ### 巢狀 `for` 迴圈
 
 利用兩層 for 迴圈列印九九乘法表
 
-[13_ninenine.py](/sample_codes/part1/13_ninenine.py)
+[13_ninenine.py][13_ninenine.py]
 
 ---
 
@@ -522,7 +525,7 @@ for i in range(1, 11):
     print(i, end=",") # 1,2,3,4,5
 ```
 
-[14_multiple.py](/sample_codes/part1/14_multiple.py)
+[14_multiple.py][14_multiple.py]
 
 ---
 
@@ -537,7 +540,7 @@ for i in range(1, 11):
     print(i, end=",") # 1,2,3,4,5,7,8,9,10,
 ```
 
-[15_except5.py](/sample_codes/part1/15_except5.py)
+[15_except5.py][15_except5.py]
 
 ---
 
@@ -578,6 +581,8 @@ print(total)
 
 在使用while迴圈時，要注意設定條件判斷的中止條件，否則會陷入無窮迴圈。
 
+[16_while.py][16_while.py]
+
 ---
 
 ### 練習題 3
@@ -593,4 +598,18 @@ print(total)
 
 玩法：其中一人做莊，給定一個數字範圍，再從中選出一個自然數，此數字稱為「密碼」，不能讓其他參與遊戲者得知。而遊戲參與者輪流猜測數字。每猜一個數，莊家就要告知遊戲者該數字是大於或小於密碼，直至密碼被猜中。
 
----
+[02_print.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/02_print.py
+[03_printf.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/03_printf.py
+[04_printf2.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/04_printf2.py
+[05_format.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/05_format.py
+[06_fstring.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/06_fstring.py
+[07_input.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/07_input.py
+[08_complex.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/08_complex.py
+[09_password1.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/09_password1.py
+[10_password2.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/10_password2.py
+[11_grade.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/11_grade.py
+[12_numtotal.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/12_numtotal.py
+[13_ninenine.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/13_ninenine.py
+[14_multiple.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/14_multiple.py
+[15_except5.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/15_except5.py
+[16_while.py]:https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part1/16_while.py
