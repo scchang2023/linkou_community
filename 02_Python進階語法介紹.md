@@ -1003,9 +1003,9 @@ f.close()
 
 輸入兩個正整數，求兩數之和。程式中，若輸入非數值資料，以 try⋯except 捕捉發生的錯誤。
 
-[02_串列元素配置]: icons/02_串列元素配置.png
-[02_串列元素內容]: icons/02_串列元素內容.png
-[02_字典元素配置]: icons/02_字典元素配置.png
+[02_串列元素配置]: https://github.com/scchang2023/linkou_community/tree/main/icons/02_串列元素配置.png
+[02_串列元素內容]: https://github.com/scchang2023/linkou_community/tree/main/icons/02_串列元素內容.png
+[02_字典元素配置]: https://github.com/scchang2023/linkou_community/tree/main/icons/02_字典元素配置.png
 
 [01_list1.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/01_list1.py
 [02_list2.py]: https://github.com/scchang2023/linkou_community/tree/main/sample_codes/part2/02_list2.py
