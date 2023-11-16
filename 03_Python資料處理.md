@@ -41,6 +41,12 @@
 
 ### CSV檔的寫入
 
+- 如果我們在程式中產生了表格的資料，想要儲存為 csv 檔案，可以使用`writer = csv.writer(csvfile)`。
+- 如果要以空白分隔欄位，建立 CSV 檔寫入器 `writer = csv.writer(csvfile, delimiter = " ")`。
+- 如果資料是已經整理好的二維表格，也可以使用`writer.writerows(table)`一次就把整張表格寫進 csv 檔案中。
+
+---
+
 ### 寫入Dictionary
 
 ### 練習題 1
