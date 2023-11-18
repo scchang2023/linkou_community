@@ -169,6 +169,39 @@
 </menu>
 ```
 
+---
+
+### XML 的重要特性(1/2)
+
+- 標籤以一個 < 字元開頭，例如範例中的標籤 menu、breakfast、lunch、dinner 和 item。
+- 忽略空格。
+- 通常開始標籤（例如 `<menu>`）後接著一段內容，最後是相匹配的結束標籤（例如 `</menu>`）。
+- 標籤間可能存在多級嵌套，例如範例檔中，標籤 item 是標籤 breakfast、lunch 和 dinner 的子標籤，也是標籤 menu 的子標籤。
+
+---
+
+### XML 的重要特性(2/2)
+
+- 可選屬性(attribute)可以出現在開始標籤裡，例如 price 是 item 的一個屬性。
+- 標籤中可以包含值(value)，範例中每個 item 都會有一個值，例如第二個breakfast item 的 pancakes。
+- 存放資料的位置可以是任意的—屬性、值或者子標籤。例如也可以把最後一個item標籤寫作 `<item price ="$80" food ="spaghetti"/>`。
+
+---
+
+### XML 檔案格式與 ElementTree 套件
+
+Python解析XML最簡單的方法是使用ElementTree套件
+
+- ElementTree()構建空樹。
+- parse()讀入xml檔案，解析映射到空樹。
+- getroot()獲取根節點，透過下標可訪問相應的節點。
+- tag獲取節點名，attrib獲取節點屬性字典，text獲取節點文本。
+- find()返回匹配到節點名的第一個節點，findall()返回匹配到節點名的所有節點。
+- iter()創建樹反覆運算器，遍歷當前節點的所有子節點，返回匹配到節點名的所有節點。
+- remove()移除相應的節點。
+
+---
+
 [01_csvread.py]: /sample_codes/part3/01_csvread.py
 [02_csvreaddict.py]: /sample_codes/part3/02_csvreaddict.py
 [03_csvwrite.py]: /sample_codes/part3/03_csvwrite.py
