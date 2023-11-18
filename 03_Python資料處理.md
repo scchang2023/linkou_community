@@ -69,7 +69,7 @@
 
 ---
 
-## JSON檔案
+## JSON (JavaScript Object Notation)
 
 ### JSON 概念
 
@@ -134,7 +134,40 @@
 
 在複雜的結構中，取出使用者有興趣的資料。
 
+[08_jsonparse.py][08_jsonparse.py]
+
 ---
+
+### 練習題
+
+政府資料開放平臺 ： https://data.gov.tw/ 搜尋欄位輸入：json，下載任一JSON檔，並用Python讀取內容, 例如：路邊停車資訊.json
+
+---
+
+## XML (eXtensible Markup Language)
+
+- 是一種標記式語言。
+- 標記(Markup)指電腦所能理解的資訊符號，透過此種標記，電腦之間可以處理包含各種資訊的文章等
+
+--
+
+### 範例檔menu.xml
+
+```python
+<?xml version="1.0"?>
+<menu>
+  <breakfast hours="7-11">
+    <item price="$60">burritos</item>
+    <item price="$40">pancakes</item>
+  </breakfast>
+  <lunch hours="11-3">
+    <item price="$50">hamburger</item>
+  </lunch>
+  <dinner hours="3-10">
+    <item price="$80">spaghetti</item>
+  </dinner>
+</menu>
+```
 
 [01_csvread.py]: /sample_codes/part3/01_csvread.py
 [02_csvreaddict.py]: /sample_codes/part3/02_csvreaddict.py
@@ -143,3 +176,4 @@
 [05_csvex.py]: /sample_codes/part3/05_csvex.py
 [06_jsonloads.py]: /sample_codes/part3/06_jsonloads.py
 [07_jsondumps.py]: /sample_codes/part3/07_jsondumps.py
+[08_jsonparse.py]: /sample_codes/part3/08_jsonparse.py
