@@ -84,7 +84,7 @@
 
 ---
 
-### Json 具體的格式
+### JSON 具體的格式
 
 - 名稱/值（pair）：名稱和值之間使用：隔開，一般的形式是：{name:value} 一個名稱是一個字串； 一個值(value)可以是一個字串(string)、一個數值(number)、一個物件(object)、一個布林值(bool)、一個有序列表(array)、或者一個null值。
 
@@ -116,8 +116,30 @@
 
 ---
 
+### JSON 讀取與寫入
+
+- 在Python中若要讀取或產生JSON的檔案，可以使用內建的 json 套件。
+
+- JSON 套件常用方法：
+
+    `json.dumps()`是將Python中的文件序列化為JSON格式的字串。
+    `json.loads()`是將已編碼的JSON字串解碼為Python物件。
+
+[06_jsonloads.py][06_jsonloads.py]
+[07_jsondumps.py][07_jsondumps.py]
+
+---
+
+### JSON處理複雜結構
+
+在複雜的結構中，取出使用者有興趣的資料。
+
+---
+
 [01_csvread.py]: /sample_codes/part3/01_csvread.py
 [02_csvreaddict.py]: /sample_codes/part3/02_csvreaddict.py
 [03_csvwrite.py]: /sample_codes/part3/03_csvwrite.py
 [04_csvwritedict.py]: /sample_codes/part3/04_csvwritedict.py
 [05_csvex.py]: /sample_codes/part3/05_csvex.py
+[06_jsonloads.py]: /sample_codes/part3/06_jsonloads.py
+[07_jsondumps.py]: /sample_codes/part3/07_jsondumps.py
