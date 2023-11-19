@@ -138,9 +138,11 @@
 
 ---
 
-### 練習題
+### 練習題 2
 
 政府資料開放平臺 ： https://data.gov.tw/ 搜尋欄位輸入：json，下載任一JSON檔，並用Python讀取內容, 例如：路邊停車資訊.json
+
+[09_jsonex.py][09_jsonex.py]
 
 ---
 
@@ -200,6 +202,31 @@ Python解析XML最簡單的方法是使用ElementTree套件
 - iter()創建樹反覆運算器，遍歷當前節點的所有子節點，返回匹配到節點名的所有節點。
 - remove()移除相應的節點。
 
+[10_xmlread1.py][10_xmlread1.py]
+[11_xmlread2.py][[11_xmlread2.py]]
+
+---
+
+### ElementTree套件寫入方法
+
+- ElementTree()構建節點。
+- set()設置屬性和相應值。
+- append()添加子節點。
+- extend()結合循環器中的chain()合成列表添加一組節點。
+- ext屬性設置文本值。
+- write()寫入xml檔案。
+
+[12_xmlwrite.y][12_xmlwrite.py]
+[13_xmlremove.y][13_xmlremove.py]
+
+---
+
+### 練習題 3
+
+政府資料開放平臺 ： https://data.gov.tw/ 下載任一xml 檔，並用Python讀取內容，例如：部落圖書資訊站.xml、weatherReport1.xml
+
+[14_xmlex.py][14_xmlex.py]
+
 ---
 
 [01_csvread.py]: /sample_codes/part3/01_csvread.py
@@ -210,3 +237,8 @@ Python解析XML最簡單的方法是使用ElementTree套件
 [06_jsonloads.py]: /sample_codes/part3/06_jsonloads.py
 [07_jsondumps.py]: /sample_codes/part3/07_jsondumps.py
 [08_jsonparse.py]: /sample_codes/part3/08_jsonparse.py
+[09_jsonex.py]: /sample_codes/part3/09_jsonex.py
+[10_xmlread1.py]: /sample_codes/part3/10_xmlread1.py
+[12_xmlwrite.py]: /sample_codes/part3/12_xmlwrite.py
+[13_xmlremove.py]: /sample_codes/part3/13_xmlremove.py
+[14_xmlex.py]: /sample_codes/part3/14_xmlex.py
