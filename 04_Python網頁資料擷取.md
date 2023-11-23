@@ -41,4 +41,18 @@
 - 使用requests套件的get()函式，可以讀取網頁的資料，其語法如下：get(網址)
 - get()函式會對伺服器(Server)提出取得網頁資料的請求(Request)，伺服器接到請求後，回應(Response)網頁的原始碼內容。
 
+[01_requests1.py][01_requests1.py]
+[02_requests2.py][02_requests2.py]
+
 ---
+
+### BeautifulSoup套件
+
+- BeautifulSoup套件為第三方套件
+- 目前BeautifulSoup套件已經發展到第4版，簡稱bs4，匯入BeautifulSoup套件的語法如下：from bs4 import BeautifulSoup。
+- BeautifulSoup套件與requests套件可以整合運用，由requests套件取得網頁的原始碼，然後在BeautifulSoup套件中運用html.parser解析原始碼，自訂bs為BeautifulSoup型別物件名稱，其語法如下： bs=BeautifulSoup (原始碼，"html.parser")。
+
+---
+
+[01_requests1.py]: /sample_codes/part4/01_requests1.py
+[02_requests2.py]: /sample_codes/part4/02_requests2.py
