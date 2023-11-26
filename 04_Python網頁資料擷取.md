@@ -99,6 +99,23 @@
 
 ---
 
+### 範例 1：台銀牌告匯率
+
+https://rate.bot.com.tw/xrt?Lang=zh-TW
+
+![Alt text](04_台銀牌告匯率.png)
+
+---
+
+#### 檢視網頁原始碼
+
+![Alt text](04_台銀牌告匯率_網頁原始碼.png)
+
+[04_tbank.py][04_tbank.py]
+
+---
+
 [01_requests1.py]: /sample_codes/part4/01_requests1.py
 [02_requests2.py]: /sample_codes/part4/02_requests2.py
 [03_bs4.py]: /sample_codes/part4/03_bs4.py
+[04_tbank.py]: /sample_codes/part4/04_tbank.py
