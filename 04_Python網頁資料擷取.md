@@ -115,6 +115,14 @@ https://rate.bot.com.tw/xrt?Lang=zh-TW
 
 ---
 
+### 範例 2：大樂透
+
+https://www.taiwanlottery.com.tw/result_all.htm
+
+![Alt text](04_台彩大樂透.png)
+
+---
+
 [01_requests1.py]: /sample_codes/part4/01_requests1.py
 [02_requests2.py]: /sample_codes/part4/02_requests2.py
 [03_bs4.py]: /sample_codes/part4/03_bs4.py
