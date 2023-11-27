@@ -1,13 +1,8 @@
----
-# theme: sky
-# width: 1280
-# height: 960
-# marp: true
----
-
 # Python</br>資料處理
 
 章士祺
+
+[TOC]
 
 ---
 
