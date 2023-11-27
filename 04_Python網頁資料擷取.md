@@ -98,13 +98,13 @@
 
 https://rate.bot.com.tw/xrt?Lang=zh-TW
 
-![Alt text](04_台銀牌告匯率.png)
+![Alt text](/icons/04_台銀牌告匯率.png)
 
 ---
 
 #### 檢視網頁原始碼
 
-![Alt text](04_台銀牌告匯率_網頁原始碼.png)
+![Alt text](/icons/04_台銀牌告匯率_網頁原始碼.png)
 
 [04_tbank.py][04_tbank.py]
 
@@ -114,7 +114,7 @@ https://rate.bot.com.tw/xrt?Lang=zh-TW
 
 https://www.taiwanlottery.com.tw/result_all.htm
 
-![Alt text](04_台彩大樂透.png)
+![Alt text](/icons/04_台彩大樂透.png)
 
 ---
 
