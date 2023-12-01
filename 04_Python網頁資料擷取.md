@@ -98,13 +98,13 @@
 
 https://rate.bot.com.tw/xrt?Lang=zh-TW
 
-![Alt text][04_台銀牌告匯率.png]
+![Alt text][04_台銀牌告匯率]
 
 ---
 
 #### 檢視網頁原始碼
 
-![Alt text][04_台銀牌告匯率_網頁原始碼.png]
+![Alt text][04_台銀牌告匯率_網頁原始碼]
 
 [04_tbank.py][04_tbank.py]
 
@@ -114,9 +114,25 @@ https://rate.bot.com.tw/xrt?Lang=zh-TW
 
 https://www.taiwanlottery.com.tw/result_all.htm
 
-![Alt text](/icons/04_台彩大樂透.png)
+![Alt text][04_台彩大樂透]
 
 [05_lottery.py][05_lottery.py]
+
+---
+
+### 範例3：網路擷取圖片
+
+https://www.edu.tw/Default.aspx
+
+![Alt text][04_教育部]
+
+[06_pic.py][06_pic.py]
+
+---
+
+### 練習題 1
+
+自行選定目標網頁進行爬取。例如：統一發票開獎。
 
 ---
 
@@ -125,5 +141,9 @@ https://www.taiwanlottery.com.tw/result_all.htm
 [03_bs4.py]: /sample_codes/part4/03_bs4.py
 [04_tbank.py]: /sample_codes/part4/04_tbank.py
 [05_lottery.py]: /sample_codes/part4/05_lottery.py
-[04_台銀牌告匯率.png]: /icons/04_台銀牌告匯率.png
-[04_台銀牌告匯率_網頁原始碼.png]: /icons/04_台銀牌告匯率_網頁原始碼.png
+[06_pic.py]: /sample_codes/part4/06_pic.py
+
+[04_台銀牌告匯率]: /icons/04_台銀牌告匯率.png
+[04_台銀牌告匯率_網頁原始碼]: /icons/04_台銀牌告匯率_網頁原始碼.png
+[04_台彩大樂透]: /icons/04_台彩大樂透.png
+[04_教育部]: /icons/04_教育部.png
