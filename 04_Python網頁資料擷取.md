@@ -116,11 +116,14 @@ https://www.taiwanlottery.com.tw/result_all.htm
 
 ![Alt text](/icons/04_台彩大樂透.png)
 
+[05_lottery.py][05_lottery.py]
+
 ---
 
 [01_requests1.py]: /sample_codes/part4/01_requests1.py
 [02_requests2.py]: /sample_codes/part4/02_requests2.py
 [03_bs4.py]: /sample_codes/part4/03_bs4.py
 [04_tbank.py]: /sample_codes/part4/04_tbank.py
+[05_lottery.py]: /sample_codes/part4/05_lottery.py
 [04_台銀牌告匯率.png]: /icons/04_台銀牌告匯率.png
 [04_台銀牌告匯率_網頁原始碼.png]: /icons/04_台銀牌告匯率_網頁原始碼.png
