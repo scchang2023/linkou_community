@@ -134,6 +134,10 @@ https://www.edu.tw/Default.aspx
 
 自行選定目標網頁進行爬取。例如：統一發票開獎。
 
+[07_invoice.py][07_invoice.py]
+
+[08_ptt.py][08_ptt.py]
+
 ---
 
 [01_requests1.py]: /sample_codes/part4/01_requests1.py
@@ -142,6 +146,8 @@ https://www.edu.tw/Default.aspx
 [04_tbank.py]: /sample_codes/part4/04_tbank.py
 [05_lottery.py]: /sample_codes/part4/05_lottery.py
 [06_pic.py]: /sample_codes/part4/06_pic.py
+[07_invoice.py]: /sample_codes/part4/07_invoice.py
+[08_ptt.py]: /sample_codes/part4/08_ptt.py
 
 [04_台銀牌告匯率]: /icons/04_台銀牌告匯率.png
 [04_台銀牌告匯率_網頁原始碼]: /icons/04_台銀牌告匯率_網頁原始碼.png
