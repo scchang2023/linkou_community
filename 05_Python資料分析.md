@@ -287,3 +287,45 @@ NumPy提供了許多其他聚合函數。 下表提供了NumPy中可用的有用
 ---
 
 ## Pandas套件：pan(el)-da(ta)-s
+
+- 在最基本的層面上，Pandas套件可以被認為是NumPy結構化陣列的增強版本，其中行和列用標籤而不是簡單的整數索引來標識。
+- 由此Pandas在基本資料結構之上提供了許多有用的工具，方法和功能，這三個基本的Pandas資料結構是：Series、DataFrame和Index。
+- Series是索引資料的一維陣列；DataFrame是索引資料的二維陣列
+
+---
+
+### Pandas Series 物件
+
+Pandas Series是索引資料的一維陣列，可以從串列或陣列創建，如下所示：
+
+```python
+import pandas as pd
+
+data=pd.Series([0.25, 0.5, 0.75, 1.0])
+print(data)
+```
+
+```python
+0    0.25
+1    0.50
+2    0.75
+3    1.00
+dtype: float64
+```
+
+---
+
+- Series包含了一系列值和一系列索引，我們可以使用values和index屬性來訪問。
+- values就只是一個NumPy陣列，index則是類型為pd.Index的類似陣列的物件。
+
+```python
+print(data.values)
+print(data.index)
+```
+
+```python
+[0.25 0.5  0.75 1.  ]
+RangeIndex(start=0, stop=4, step=1)
+```
+
+---
