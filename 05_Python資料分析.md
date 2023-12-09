@@ -329,3 +329,17 @@ RangeIndex(start=0, stop=4, step=1)
 ```
 
 ---
+
+與NumPy陣列一樣，相關索引可以透過熟悉的Python方括號表示法訪問資料
+
+```python
+print(data[1])
+print(data[1:3])
+```
+
+```python
+0.5
+1    0.50
+2    0.75
+dtype: float64
+```
