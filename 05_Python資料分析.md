@@ -343,3 +343,32 @@ print(data[1:3])
 2    0.75
 dtype: float64
 ```
+
+---
+
+### Series 可被看一般化的NumPy 陣列
+
+- Series物件可以與一維NumPy陣列互換，其區別在於索引的存在。
+- Numpy陣列有一個隱式定義的整數索引用於訪問值。
+- Pandas Series有一個顯式定義的索引與值相關聯。這個顯式索引定義為Series物件提供了額外的功能。 例如，索引不必是整數，但可以包含任何所需類型的值。甚至如果我們願意，我們可以使用字符串作為索引。
+
+```python
+import pandas as pd
+
+data=pd.Series([0.25,0.5,0.75,1.0], index=["a","b","c","d"])
+print(data)
+print(data["b"])
+```
+
+```python
+a    0.25
+b    0.50
+c    0.75
+d    1.00
+dtype: float64
+0.5
+```
+
+---
+
+
