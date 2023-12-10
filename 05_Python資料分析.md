@@ -371,4 +371,45 @@ dtype: float64
 
 ---
 
+甚至可以使用非連續或無順序的索引：
 
+```python
+data=pd.Series([0.25,0.5,0.75,1.0], index=[2,5,3,7])
+print(data)
+print(data[5])
+```
+
+```python
+2    0.25
+5    0.50
+3    0.75
+7    1.00
+dtype: float64
+0.5
+```
+
+---
+
+### Series 可以當作特殊的字典
+
+- 字典是將任意鍵映射到一組任意值的結構，而Series是將鍵入的鍵映射到一組鍵入值的結構。
+- 這種類型很重要：正如NumPy陣列後面的特定於類型的編譯代碼使其比某些操作的Python串列更有效，Series的類型訊息使得它比Python字典更有效操作。
+
+```python
+population_dict={"California":39250017,
+                 "Texas":27862596,
+                 "Florida":20612439,
+                 "New York":19745289,
+                 "Illinois":12801539}
+population=pd.Series(population_dict)
+print(population)
+```
+
+```python
+California    39250017
+Texas         27862596
+Florida       20612439
+New York      19745289
+Illinois      12801539
+dtype: int64
+```
