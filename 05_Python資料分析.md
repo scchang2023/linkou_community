@@ -413,3 +413,165 @@ New York      19745289
 Illinois      12801539
 dtype: int64
 ```
+
+---
+
+- 預設情況下，將創建一個Series，其中索引是從排序鍵中提取的。從這裡，可以執行典型的字典式項目訪問：
+
+```python
+print(population["California"]) # 39250017
+```
+
+- 但是與字典不同，Series也支援陣列樣式的操作，例如切片：
+
+```python
+print(population["California":"Illinois"])
+```
+
+```python
+California    39250017
+Texas         27862596
+Florida       20612439
+New York      19745289
+Illinois      12801539
+dtype: int64
+```
+
+---
+
+### Pandas DataFrame物件
+
+Pandas的DataFrame被認為是NumPy陣列的一般化，也可以被認為是Python字典的特化。
+
+---
+
+### DataFrame作為一般化的NumPy陣列
+
+- DataFrame是具有靈活列索引和靈活行名的二維陣列的模擬，可以將"DataFrame"視為一系列對齊的Series物件。
+- 在這裡，"對齊"是指它們共享相同的索引。下面首先構建一個新的Series，列出上一節討論的五個州中每個州的區域：
+
+```python
+California    423967
+Florida       170312
+Illinois      149995
+New York      141297
+Texas         695662
+dtype: int64
+```
+
+---
+
+現在我們已經將它與之前的population Series一起使用，我們可以使用字典來建構包含這些訊息的單個二維物件：
+
+```python
+states=pd.DataFrame({"population":population,"area":area})
+print(states)
+```
+
+```python
+population    area
+California    39250017  423967
+Florida       20612439  170312
+Illinois      12801539  149995
+New York      19745289  141297
+Texas         27862596  695662
+```
+
+---
+
+DataFrame有一個index屬性，可以訪問索引標籤，還有一個columns屬性，它是一個包含行標籤的Index物件：
+
+```python
+print(states.index)
+print(states.columns)
+```
+
+```python
+Index(['California', 'Florida', 'Illinois', 'New York', 'Texas'], dtype='object')
+Index(['area', 'population'], dtype='object')
+```
+
+因此，DataFrame可以被認為是二維NumPy陣列的一般化，其中行和列都具有用於訪問資料的通用索引。
+
+---
+
+### Series中資料的選取
+
+- Series物件可用於一維NumPy陣列與標準的Python字典。
+- 像字典一樣，Series物件提供從一組鍵到一組值的映射。
+
+```python
+data=pd.Series([0.25,0.5,0.75,1.0],
+               index=["a","b","c","d"])
+print(data)
+print(data["b"])
+```
+
+```python
+a    0.25
+b    0.50
+c    0.75
+d    1.00
+dtype: float64
+0.5
+```
+
+---
+
+Series物件甚至可以用類似字典的語法修改。如同透過分配新鍵來擴展字典一樣，可以透過分配新的索引值來擴展Series：
+
+```python
+data["e"]=1.25
+print(data)
+```
+
+```python
+a    0.25
+b    0.50
+c    0.75
+d    1.00
+e    1.25
+dtype: float64
+```
+
+---
+
+### 將Series當作一維陣列
+
+一個Series建立在這個類似字典的界面上，並透過與NumPy陣列相同的基本機制提供陣列樣式的項目選擇 - 即 slices、masking 和 fancy indexing 。這些例子如下：
+
+```python
+print(data["a":"c"])
+print(data[0:2])
+```
+
+```python
+a    0.25
+b    0.50
+c    0.75
+dtype: float64
+a    0.25
+b    0.50
+dtype: float64
+```
+
+---
+
+其中切片可能是混亂的根源。請留意，當使用顯式索引進行切片時（即data ["a":"c"]），最終索引在切片中包含，而在使用隱式索引進行切片時（即data [0:2]），最終索引從切片中排除。
+
+```python
+data["e"]=1.25
+print(data[(data>0.3) & (data<0.8)])
+print(data[["a","e"]])
+```
+
+```python
+b    0.50
+c    0.75
+dtype: float64
+a    0.25
+e    1.25
+dtype: float64
+```
+
+---
