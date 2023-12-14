@@ -737,3 +737,24 @@ Illinois    149995  12801539
 - pandas.read_excel
 - pandas.DataFrame.to_excel
 - pandas.read_html
+
+---
+
+### Pandas讀取csv
+
+利用Pandas將csv內容讀進DataFrame
+
+[04_pandas_csv.py][04_pandas_csv.py]
+
+---
+
+### Pandas讀取json
+
+利用Pandas將json內容讀進DataFrame
+
+[05_pandas_json.py][05_pandas_json.py]
+
+---
+
+[04_pandas_csv.py]: /sample_codes/part5/04_pandas_csv.py
+[05_pandas_json.py]: /sample_codes/part5/05_pandas_json.py
