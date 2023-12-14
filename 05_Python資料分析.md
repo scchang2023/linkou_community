@@ -575,3 +575,165 @@ dtype: float64
 ```
 
 ---
+
+### 索引採用指令: loc, iloc
+
+這些切片和索引約定可能會引起混淆。例如，如果你的Series有一個顯式的整數索引，那麼索引操作如data[1]將使用顯式索引，而切片操作如data[1:3]將使用隱式的Python風格索引。
+
+```python
+data=pd.Series(["a","b","c"],index=[1,3,5])
+print(data)
+print(data[1])
+print(data[1:3])
+```
+
+```python
+1    a
+3    b
+5    c
+dtype: object
+a
+3    b
+5    c
+dtype: object
+```
+
+---
+
+- 由於在整數索引的情況下存在這種潛在的混淆，Pandas提供了一些特殊的 indexer 屬性，這些屬性明確地顯示了某些索引方案。
+- 這些不是函數方法，而是將特定切片接口顯示給Series中的資料的屬性。
+- 首先，loc屬性允許索引和切片始終引用顯式索引：
+
+```python
+print(data.loc[1])
+print(data.loc[1:3])
+```
+
+```python
+a
+1    a
+3    b
+dtype: object
+```
+
+---
+
+iloc屬性允許索引和切片引用隱式的Python樣式索引
+
+```python
+print(data.iloc[1])
+print(data.iloc[1:3])
+```
+
+```python
+b
+3    b
+5    c
+dtype: object
+```
+
+---
+
+### DataFrame中的資料選取
+
+- DataFrame類似二維或結構化陣列與共享相同索引的Series結構字典。
+- 將DataFrame作為相關Series物件的字典。以美國各州面積與人口數的來舉例。
+
+```python
+area=pd.Series({"California":423967,"Texas":695662,
+                "New York":141297,"Florida":170312,
+                "Illinois":149995})
+pop=pd.Series({"California":39250017,"Texas":27862596,
+               "Florida":20612439,"New York":19745289,
+               "Illinois":12801539})
+data=pd.DataFrame({"area":area,"pop":pop})
+print(data)
+```
+
+```python
+ area       pop
+California  423967  39250017
+Florida     170312  20612439
+Illinois    149995  12801539
+New York    141297  19745289
+Texas       695662  27862596
+```
+
+---
+
+構成DataFrame行的單個Series可以透過column名稱的字典式索引來訪問
+
+```python
+print(data["area"])
+```
+
+```python
+California    423967
+Florida       170312
+Illinois      149995
+New York      141297
+Texas         695662
+Name: area, dtype: int64
+```
+
+---
+
+這種字典式語法也可用於修改物件，在這種情況下添加一個新行：
+
+```python
+data["density"]=data["pop"]/data["area"]
+print(data)
+```
+
+```python
+              area       pop     density
+California  423967  39250017   92.578000
+Florida     170312  20612439  121.027520
+Illinois    149995  12801539   85.346438
+New York    141297  19745289  139.743158
+Texas       695662  27862596   40.051916
+```
+
+---
+
+Pandas再次使用前面提到的loc、iloc索引器。使用iloc索引器，我們可以將底層陣列索引為好像它是一個簡單的NumPy陣列（使用隱式的Python樣式索引），但結果中保留了DataFrame索引和行標籤：
+
+```python
+print(data.iloc[:3,:2])
+```
+
+```python
+area       pop
+California  423967  39250017
+Florida     170312  20612439
+Illinois    149995  12801539
+```
+
+---
+
+類似地，使用loc索引器，我們可以使用顯式索引和行名稱以類似陣列的樣式索引基礎資料：
+
+```python
+print(data.loc[:"Illinois",:"pop"])
+```
+
+```python
+              area       pop
+California  423967  39250017
+Florida     170312  20612439
+Illinois    149995  12801539
+```
+
+---
+
+### Pandas的應用
+
+- pandas.read_csv
+- pandas.DataFrame.to_csv
+- pandas.read_json
+- pandas.DataFrame.to_json
+- pandas.read_xml
+- pandas.DataFrame.to_xml
+- pandas.read_excel
+- pandas.DataFrame.to_excel
+- pandas.read_html
