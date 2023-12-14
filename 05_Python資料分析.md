@@ -756,5 +756,14 @@ Illinois    149995  12801539
 
 ---
 
+### Pandas讀取xml
+
+利用Pandas將xml內容讀進DataFrame
+
+[06_pandas_xml.py][06_pandas_xml.py]
+
+---
+
 [04_pandas_csv.py]: /sample_codes/part5/04_pandas_csv.py
 [05_pandas_json.py]: /sample_codes/part5/05_pandas_json.py
+[06_pandas_xml.py]: /sample_codes/part5/06_pandas_xml.py
