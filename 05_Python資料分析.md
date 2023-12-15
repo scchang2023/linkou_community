@@ -772,7 +772,30 @@ Illinois    149995  12801539
 
 ---
 
+### Pandas與爬蟲
+
+- 用Python的BeautifulSoup來爬網站資料已經很方便。
+- 但是Python的Pandas更適合用來抓網頁表格。
+- Pandas就是Python中的Excel。
+- 另外，需特別提醒的是，Pandas對於html中表格元素的容錯能力沒有想像的完美，所以如果遇到無法解決的狀況，還是建議先用BeautifulSoup處理好完整的table元素，再丟給Pandas處理。
+
+---
+
+[08_pandas_tbank.py][08_pandas_tbank.py]
+
+[09_pandas_stock.py][09_pandas_stock.py]
+
+---
+
+### 練習題
+
+自行找尋有表格的網頁，利用Pandas爬下來。
+
+---
+
 [04_pandas_csv.py]: /sample_codes/part5/04_pandas_csv.py
 [05_pandas_json.py]: /sample_codes/part5/05_pandas_json.py
 [06_pandas_xml.py]: /sample_codes/part5/06_pandas_xml.py
 [07_pandas_excel.py]: /sample_codes/part5/07_pandas_excel.py
+[08_pandas_tbank.py]: /sample_codes/part5/08_pandas_tbank.py
+[09_pandas_stock.py]: /sample_codes/part5/09_pandas_stock.py
