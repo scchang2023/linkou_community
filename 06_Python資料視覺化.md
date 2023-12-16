@@ -20,6 +20,8 @@
 - matplotlib.pyplot 的線形圖繪圖方法為 plot，語法為：`套件名稱.plot(x座標, y座標)`
 - 繪圖後如果不會自動顯示，可用 show 方法顯示，例如：`plot.show()`
 
+[01_plot1.py][01_plot1.py]
+
 ---
 
 ### plot 方法參數及圖表設定
@@ -35,3 +37,44 @@ plot 繪圖方法，除了 x 坐標串列及 y 坐標串列為必要參數外，
 
 ---
 
+### 同時繪製多個圖形
+
+一個圖表中可以繪製多個圖形，通常會先將所有圖形都繪製完成後再顯示，例如繪製 2 個圖形：
+
+```python
+listx1 = [1, 5, 7, 9, 13, 16]
+listy1 = [15, 50, 80, 40, 70, 50]
+plt.plot(listx1, listy1)
+listx1 = [2, 6, 8, 11, 14, 16]
+listy1 = [10, 40, 30, 50, 80, 60]
+plt.plot(listx2, listy2)
+plt.show()
+```
+
+---
+
+### 圖表設定
+
+- 設定圖表標題、x 及 y 坐標標題的語法分別為：
+
+```python
+套件名稱.title(圖表標題)
+套件名稱.xlabel(x𠩜標標題)
+套件名稱.ylabel(y𠩜標標題)
+```
+
+- 設計者可以自行設定 x 及 y 坐標範圍，語法為：
+
+```python
+套件名稱.xlim(起始值, 終止值)
+套件名稱.ylim(起始值, 終止值)
+```
+
+---
+
+[02_plot2.py][02_plot2.py]
+
+---
+
+[01_plot1.py]: /sample_codes/part6/01_plot1.py
+[02_plot2.py]: /sample_codes/part6/02_plot2.py
