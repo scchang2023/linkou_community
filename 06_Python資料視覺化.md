@@ -86,7 +86,14 @@ plt.show()
 
 ### 柱狀圖
 
+柱狀圖 是以 bar 方法繪製，語法為：
+
+`套件名稱.bar(x座標串列, y座標串列, 其它參數...)`
+
+[03_bar.py][03_bar.py]
+
 ---
 
 [01_plot1.py]: /sample_codes/part6/01_plot1.py
 [02_plot2.py]: /sample_codes/part6/02_plot2.py
+[03_bar.py]: /sample_codes/part6/03_bar.py
