@@ -94,6 +94,33 @@ plt.show()
 
 ---
 
+### 圓餅圖
+
+圓餅圖 是以 pie 方法繪製，語法為：
+
+`套件名稱.pie(資料串列, 選擇性參數串列)`
+
+- 「資料串列」是一個數值串列，為畫圓餅圖的資料，其為必要參數。
+- 「選擇性參數串列」可有可無，參數名稱及功能為：
+  - labels：每一個項目標題組成的串列。
+  - colors：每一個項目顏色組成的串列。
+  - explode：每一個項目凸出數值組成的串列，「0」表示正常顯示未爆出。
+  - labeldistance：項目標題與圓心的距離是半徑的多少倍，例如「1.1」表示項目標題與圓心的距離是半徑的 1.1 倍。
+  - autopct：項目百分比的格式，語法為「% 格式 %%」，例如「%2.1f%%」表示整數 2 位數，小數 1 位數。
+  - shadow：布林值，True 表示圖形有陰影，False 表示圖形沒有陰影。
+  - startangle：開始繪圖的起始角度，繪圖會以逆時針旋轉計算角度。
+  - pctdistance：百分比文字與圓心的距離是半徑的多少倍。
+
+---
+
+[04_pie.py][04_pie.py]
+
+[05_death_valley.py][05_death_valley.py]
+
+---
+
 [01_plot1.py]: /sample_codes/part6/01_plot1.py
 [02_plot2.py]: /sample_codes/part6/02_plot2.py
 [03_bar.py]: /sample_codes/part6/03_bar.py
+[04_pie.py]: /sample_codes/part6/04_pie.py
+[05_death_valley.py]: /sample_codes/part6/05_death_valley.py
