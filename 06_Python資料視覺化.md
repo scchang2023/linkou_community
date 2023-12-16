@@ -70,9 +70,21 @@ plt.show()
 套件名稱.ylim(起始值, 終止值)
 ```
 
+[02_plot2.py][02_plot2.py]
+
 ---
 
-[02_plot2.py][02_plot2.py]
+### Matplotlib 顯示中文
+
+- Matplotlib 預設無法顯示中文，所以前一範例中各種標題及圖例都使用英文，若要在 Matplotlib 顯示中文，在程式碼中加入這行即可。
+`plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei']`
+
+- 為了能正常顯示負號，請再加入這行。
+`plt.rcParams['axes.unicode_minus']=False`
+
+---
+
+### 柱狀圖
 
 ---
 
