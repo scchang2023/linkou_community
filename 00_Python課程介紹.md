@@ -1,8 +1,8 @@
 ---
-# theme: sky
-# width: 1280
-# height: 960
-# marp: true
+# YAML header
+marp: false
+theme: gaia
+paginate: true
 ---
 
 # 輕鬆學Python程式
@@ -101,5 +101,3 @@
 - 選班代
 - 多元學習公共參與週
 - 成果展
-
----
