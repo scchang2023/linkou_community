@@ -8,6 +8,16 @@
 # slideOptions:
 #   slideNumber: true
 # type: slide
+table {
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 ---
 
 # 輕鬆學Python程式
