@@ -1,9 +1,9 @@
 ---
 # YAML header
 
-slideOptions:
-  slideNumber: true
-type: slide
+# slideOptions:
+#   slideNumber: true
+# type: slide
 
 ---
 
