@@ -1,11 +1,13 @@
 ---
 # YAML header
+
 # marp: false
 # theme: gaia
 # paginate: true
-slideOptions:
-  slideNumber: true
-type: slide
+
+# slideOptions:
+#   slideNumber: true
+# type: slide
 ---
 
 # 輕鬆學Python程式
