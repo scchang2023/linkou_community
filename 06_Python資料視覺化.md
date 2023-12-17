@@ -119,8 +119,22 @@ plt.show()
 
 ---
 
+### 練習題
+
+1. 讀取banana.csv(成交日期、成交平均價)，輸出折線圖
+1. 以成交日期為X軸，其圖標為"成交日期"
+1. 以成交平均價為Y軸，其圖標為"成交平均價"
+1. Y軸下限10，上限25
+1. 圖形標題為"香蕉成交行情"
+1. 圖例顯示"香蕉"
+
+[06_ex.py][06_ex.py]
+
+---
+
 [01_plot1.py]: /sample_codes/part6/01_plot1.py
 [02_plot2.py]: /sample_codes/part6/02_plot2.py
 [03_bar.py]: /sample_codes/part6/03_bar.py
 [04_pie.py]: /sample_codes/part6/04_pie.py
 [05_death_valley.py]: /sample_codes/part6/05_death_valley.py
+[06_ex.py]: /sample_codes/part6/06_ex.py
