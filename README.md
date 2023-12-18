@@ -1,6 +1,4 @@
-# linkou_community
-
-林口社區大學
+# 目錄
 
 [00_Python課程介紹](/00_Python課程介紹.md)
 
