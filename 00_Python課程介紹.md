@@ -7,8 +7,6 @@
 
 ---
 
-###### tags: `Python tutorial`
-
 # 輕鬆學Python程式
 
 林口社區大學113年春季班
