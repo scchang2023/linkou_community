@@ -5,8 +5,9 @@
 #   slideNumber: true
 # type: slide
 
-tags: `Python Tutorial`
 ---
+
+###### tags: `Python tutorial`
 
 # 輕鬆學Python程式
 
