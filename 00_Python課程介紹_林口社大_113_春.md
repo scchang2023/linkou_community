@@ -58,11 +58,11 @@ type: slide
 ## 課程內容
 
 <div style="overflow-y: scroll; max-height: 500px;">
-<style>
-table {
-    font-size: 16px; /* 設定表格文字大小為 14 像素 */
-}
-</style>
+  <style>
+  table {
+      font-size: 16px; /* 設定表格文字大小為 14 像素 */
+  }
+  </style>
 
 | 週次 | 日期        | 主題        | 課綱                                              |
 |----|-----------|-----------|-------------------------------------------------|
