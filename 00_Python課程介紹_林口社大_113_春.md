@@ -1,11 +1,8 @@
 ---
 # YAML header
 
-slideOptions:        # 簡報相關的設定
-  slideNumber: true
-  theme: solarized   # 顏色主題
-  transition: 'fade' # 換頁動畫
-  type: slide
+slideOptions:
+  transition: slide
 
 ---
 
