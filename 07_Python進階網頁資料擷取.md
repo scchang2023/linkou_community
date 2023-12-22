@@ -90,6 +90,13 @@ Selenium Webdriver API 常用的屬性和方法如下：
 - find_element(By_CSS_SELECTOR, )：以CSS選擇器查詢符合的元素
 - find_element(By.XPATH, )：以xpath查詢符合的元素
 
+註：需要 匯入By
+`from selenium.webdriver.common.by import By`
+
+---
+
+以實例說明如下，以下列的 HTML 原始碼，Webdriver 為 browser 為例。
+
 ---
 
 [01_selenium.py]: /sample_codes/part7/01_selenium.py
