@@ -7,8 +7,6 @@
 # theme: sky
 # type: slide
 
-title: 範例簡報        # 簡報的名稱
-tags: presentation   # 簡報的標籤
 slideOptions:        # 簡報相關的設定
   theme: solarized   # 顏色主題
   transition: 'fade' # 換頁動畫
