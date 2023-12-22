@@ -1,10 +1,11 @@
 ---
 # YAML header
 
-type: slide
+
 slideOptions:
   slideNumber: true
 theme: sky
+type: slide
 
 ---
 
