@@ -44,5 +44,20 @@ Selenium Webdriver API 常用的屬性和方法如下：
 | maximize_window()     | 視窗最大化                                |
 | get_window_size()     | 取得視窗的高度和寬度                           |
 | set_window_size()     | 設定視窗的高度和寬度                           |
+| click()               | 單擊按鈕                                 |
+| close()               | 關閉瀏覽器                                |
+| get(url)              | 連結url網址                              |
+| refresh()             | 重新整理畫面                               |
+| back()                | 返回上一頁                                |
+| forward()             | 下一頁                                  |
+| send_keys()           | 以鍵盤輸入                                |
+| submit()              | 提交                                   |
+| quit()                | 關閉瀏覽器並退出驅動程式                         |
 
---
+---
+
+[01_selenium.py][01_selenium.py]
+
+---
+
+[01_selenium.py]: /sample_codes/part7/01_selenium.py
