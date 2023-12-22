@@ -1,7 +1,6 @@
 ---
 # YAML header
 
-
 # slideOptions:
 #   slideNumber: true
 # theme: sky
@@ -10,8 +9,7 @@
 slideOptions:        # 簡報相關的設定
   theme: solarized   # 顏色主題
   transition: 'fade' # 換頁動畫
-  # parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'
-
+  type: slide
 ---
 
 # 輕鬆學Python程式
