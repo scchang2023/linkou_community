@@ -1,8 +1,7 @@
 ---
 # YAML header
 
-slideOptions:
-  transition: slide
+type: slide
 
 ---
 
