@@ -60,4 +60,36 @@ Selenium Webdriver API 常用的屬性和方法如下：
 
 ---
 
+### 練習題
+
+利用Selenium開啟Chrome瀏覽器，依序分別連到google、pchome、政府開放資料平台網頁，中間停留10秒。
+
+---
+
+### 8種基本元素定位方法
+
+- find_element_by_id()：以id查詢符合的元素
+- find_element_by_name()：以名稱查詢符合的元素
+- find_element_by_class_name()：以類別名稱查詢符合的元素
+- find_element_by_tag_name()：以HTML標籤查詢符合的元素
+- find_element_by_link_text()：以連結文字查詢符合的元素
+- find_element_by_partial_link_text()：以部分連結文字查詢符合的元素
+- find_element_by_css_selector()：以CSS選擇器查詢符合的元素
+- find_element_by_xpath()：以xpath查詢符合的元素
+
+---
+
+### 新版find_element()用法
+
+- find_element (By.ID, )：以id查詢符合的元素
+- find_element(By.NAME, )：以名稱查詢符合的元素
+- find_element(By.CLASS_NAME, )：以類別名稱查詢符合的元素
+- find_element(By.TAG_NAME, )：以HTML標籤查詢符合的元素
+- find_element(By.LINK_TEXT, )：以連結文字查詢符合的元素
+- find_element(By_PARTIAL_LINK_TEXT, )：以部分連結文字查詢符合的元素
+- find_element(By_CSS_SELECTOR, )：以CSS選擇器查詢符合的元素
+- find_element(By.XPATH, )：以xpath查詢符合的元素
+
+---
+
 [01_selenium.py]: /sample_codes/part7/01_selenium.py
