@@ -59,7 +59,7 @@ type: slide
 
 ## 課程內容
 
-<div style="overflow-y: scroll; max-height: 300px;">
+<div style="overflow-y: scroll; max-height: 600px;">
 
 | 週次 | 日期        | 主題        | 課綱                                              |
 |----|-----------|-----------|-------------------------------------------------|
