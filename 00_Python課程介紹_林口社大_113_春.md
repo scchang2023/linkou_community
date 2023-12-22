@@ -1,15 +1,12 @@
 ---
 # YAML header
 
-# slideOptions:
-#   slideNumber: true
-# theme: sky
-# type: slide
-
 slideOptions:        # 簡報相關的設定
+  slideNumber: true
   theme: solarized   # 顏色主題
   transition: 'fade' # 換頁動畫
   type: slide
+
 ---
 
 # 輕鬆學Python程式
