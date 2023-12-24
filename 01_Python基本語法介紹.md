@@ -8,13 +8,25 @@
 
 ## 開發環境
 
-### 安裝 Python
+### 下載 Python
 
 https://www.python.org/
 
+![Alt text](./icons/01_下載Python.png)
+
 ---
 
-### 安裝 Visual Studio Code
+### 安裝 Python
+
+![Alt text](./icons/01_安裝Python1.png)
+
+---
+
+![Alt text](./icons/01_安裝Python2.png)
+
+---
+
+### 下載 Visual Studio Code
 
 https://code.visualstudio.com/
 
