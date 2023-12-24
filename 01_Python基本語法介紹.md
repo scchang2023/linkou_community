@@ -30,6 +30,12 @@ https://www.python.org/
 
 https://code.visualstudio.com/
 
+![Alt text](./icons/01_下載VSCode.png)
+
+---
+
+### 安裝 Visual Studio Code
+
 ---
 
 ### 寫第一隻程式測試
