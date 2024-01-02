@@ -97,6 +97,33 @@ Selenium Webdriver API 常用的屬性和方法如下：
 
 以實例說明如下，以下列的 HTML 原始碼，Webdriver 為 browser 為例。
 
+```python
+<html>
+    <body>
+        <h1>Welcome</h1>
+        <form id="loginForm">
+            <p class="content">Are you sure you want to do this?</p>
+            <a href="coninue.html">Continue</a>
+            <a href="cancel.html">Cancel</a>
+            <input name="username" type="text" />
+            <input name="password" type="password" />
+            <input name="continue" type="submit" value="Login"/>
+            <input name="continue" type="button" value="Clear"/>
+        </form>
+    </body>
+</html>
+```
+
+---
+
+- find_element_by_id
+- find_element_by_name
+- find_element_by_xpath
+- find_element_by_link_text
+- find_element_by_partial_link_text
+- find_element_by_tag_name
+- find_element_by_class_name
+
 ---
 
 [01_selenium.py]: /sample_codes/part7/01_selenium.py
