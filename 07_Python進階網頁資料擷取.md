@@ -117,9 +117,18 @@ Selenium Webdriver API 常用的屬性和方法如下：
 ---
 
 - find_element_by_id
+`login_form=browser.find_element_by_id('loginForm')`
 - find_element_by_name
+`username=browser.find_element_by_name('username')`
+`password=browser.find_element_by_name('password')`
 - find_element_by_xpath
+`login_form=browser.find_element_by_xpath("//form[@id='loginForm']")`
+`username=browser.find_element_by_xpath("//input[@name='username']")`
 - find_element_by_link_text
+`continue_link=browser.find_element_by_link_text('Continue')`
+
+---
+
 - find_element_by_partial_link_text
 - find_element_by_tag_name
 - find_element_by_class_name
