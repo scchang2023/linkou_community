@@ -60,7 +60,7 @@ Selenium Webdriver API 常用的屬性和方法如下：
 
 ---
 
-### 練習題
+### 練習題 1
 
 利用Selenium開啟Chrome瀏覽器，依序分別連到google、pchome、政府開放資料平台網頁，中間停留10秒。
 
@@ -130,9 +130,26 @@ Selenium Webdriver API 常用的屬性和方法如下：
 ---
 
 - find_element_by_partial_link_text
+`continue_link=browser.find_element_by_partial_link_text('Conti')`
 - find_element_by_tag_name
+`heading1=browser.find_element_by_tag_name('h1')`
 - find_element_by_class_name
+`content=browser.find_element_by_class_name('content')`
+
+---
+
+[02_findlink.py][02_findlink.py]
+
+[03_findname.py][03_findname.py]
+
+---
+
+### 練習題 2
+
+利用Selenium開啟Chrome瀏覽器，開啟Facebook網頁，輸入個人帳號密碼登入。
 
 ---
 
 [01_selenium.py]: /sample_codes/part7/01_selenium.py
+[02_findlink.py]: /sample_codes/part7/02_findlink.py
+[03_findname.py]: /sample_codes/part7/03_findname.py
