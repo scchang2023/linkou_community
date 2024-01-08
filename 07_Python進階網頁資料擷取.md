@@ -253,9 +253,27 @@ m=pat.findall("tem12po")
 print(m) # ['tem', 'po']
 ```
 
+[05_re_findall.py][05_re_findall.py]
+
+---
+
+[06_getEmail.py][06_getEmail.py]
+
+---
+
+### 練習題 4
+
+- 利用正規表示式搜尋網頁上的電話號碼。
+
+---
+
+## The End
+
 ---
 
 [01_selenium.py]: /sample_codes/part7/01_selenium.py
 [02_findlink.py]: /sample_codes/part7/02_findlink.py
 [03_findname.py]: /sample_codes/part7/03_findname.py
 [04_pagesource.py]: /sample_codes/part7/04_pagesource.py
+[05_re_findall.py]: /sample_codes/part7/05_re_findall.py
+[06_getEmail.py]: /sample_codes/part7/06_getEmail.py
