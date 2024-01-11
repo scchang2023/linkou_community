@@ -27,5 +27,14 @@
 
 ---
 
+### 從WebCam讀取QRCode
+
+[03_QRCode_Camera.py][03_QRCode_Camera.py]
+
+---
+
+### 傳送 Line 通知
+
 [01_qrcode_gen.py]: /sample_codes/part8/01_qrcode_gen.py
 [02_pyzbar.py]: /sample_codes/part8/02_pyzbar.py
+[03_QRCode_Camera.py]: /sample_codes/part8/03_QRCode_Camera.py
