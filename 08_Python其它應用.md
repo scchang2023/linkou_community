@@ -35,6 +35,12 @@
 
 ### 傳送 Line 通知
 
+- 使用 Python 程式將訊息透過 LINE所提供的官方帳號「LINE Notify」向 LINE 群組發送訊息提醒
+- 至 https://notify-bot.line.me/zh_TW/ 進行登入
+- 點選右上方帳號名稱選單中的「個人頁面」
+
+---
+
 [01_qrcode_gen.py]: /sample_codes/part8/01_qrcode_gen.py
 [02_pyzbar.py]: /sample_codes/part8/02_pyzbar.py
 [03_QRCode_Camera.py]: /sample_codes/part8/03_QRCode_Camera.py
