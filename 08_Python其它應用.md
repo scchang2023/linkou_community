@@ -41,6 +41,25 @@
 
 ---
 
+- 點選「發行權杖」
+- 輸入自訂「權杖名稱」，這邊設定的名稱會在出現在提醒訊息的Title
+- 選擇分享的群組後 (先選擇第一個)，按下「發行」，即可取得權杖
+- 安裝lineTool套件，`pip install lineTool`
+- 使用lineNotify()發送訊息
+
+---
+
+### 挑戰題
+
+- 結合WebCam和line notify，設計一個入侵警告系統。
+
+```python
+diff_img = cv2.subtract(frame,frame1)
+d = np.sum(diff_img)
+```
+
+---
+
 [01_qrcode_gen.py]: /sample_codes/part8/01_qrcode_gen.py
 [02_pyzbar.py]: /sample_codes/part8/02_pyzbar.py
 [03_QRCode_Camera.py]: /sample_codes/part8/03_QRCode_Camera.py
