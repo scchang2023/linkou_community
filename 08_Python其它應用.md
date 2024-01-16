@@ -89,6 +89,8 @@ d = np.sum(diff_img)
 - 利用WordCloud()設定中文字型以及背景顏色
 - 利用generate()產生文字雲，輸入的資料必須是以空格分開的字詞
 
+![Alt text](.\icons\08_文字雲圖像1.png)
+
 [06_wordcloud.py][06_wordcloud.py]
 
 ---
