@@ -95,8 +95,15 @@ d = np.sum(diff_img)
 
 ---
 
+### 挑戰題 2
+
+利用爬蟲抓取某主題最新100則討論文章，利用斷詞及文字雲，找出最熱門討論的關鍵字。
+
 ---
 
+### 使用AutoGUI操控電腦
+
+---
 [01_qrcode_gen.py]: /sample_codes/part8/01_qrcode_gen.py
 [02_pyzbar.py]: /sample_codes/part8/02_pyzbar.py
 [03_QRCode_Camera.py]: /sample_codes/part8/03_QRCode_Camera.py
