@@ -13,3 +13,7 @@
 [05_Python資料分析](/05_Python資料分析.md)
 
 [06_Python資料視覺化](/06_Python資料視覺化.md)
+
+[07_Python進階網頁資料擷取](/07_Python進階網頁資料擷取.md)
+
+[08_Python其它應用](/08_Python其它應用.md)
